@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/maeil_favicon.ico">
+  <title>상담서비스 | 매일유업</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/consult-service.css">
+
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="images/maeil_logo.png" alt=""></a>
+  </header>
+  <section class="consulting-header">
+    <h1>
+      <span>특별한</span> 제품을 찾으시나요? <br>
+      소중한 나, 소중한 사람에게 적합한 <span>매일유업</span> 제품을 상담받으세요.
+    </h1>
+    <hr>
+    <p>
+      상담 내용에 따른 절차에 관련하여 전화 또는 이메일로 상담해드립니다.
+    </p>
+    <div class="consulting-form">
+      <form>
+        <div class="row">
+          <div class="field">
+            <label>이름 <em>*</em></label>
+            <input type="text" required placeholder="이름을 입력하세요.">
+          </div>
+          <div class="field">
+            <label>이메일 <em>*</em></label>
+            <input type="email" required placeholder="이메일을 입력하세요.">
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label>연락처 <em>*</em></label>
+            <input type="text" required placeholder="000-0000-0000 방식에 따라 입력하세요.">
+          </div>
+          <div class="field">
+            <label>상담구분 <em>*</em></label>
+            <select required>
+              <option value="">선택하세요</option>
+              <option value="">알러지 유발 성분 제거 제품</option>
+              <option value="">특수 분유 제품</option>
+              <option value="">어르신안부서비스</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="field">
+            <label>상담내용 <em>*</em></label>
+            <textarea rows="5" required placeholder="상담 접수가 이루어진 후 24시간 내에 연락드리겠습니다. 감사합니다."></textarea>
+          </div>
+        </div>
+        <div class="policy">
+          <h4>개인정보 취급방침 (필수)</h4>
+          <iframe src="maeil_policy.html" frameborder="0"></iframe>
+          <div class="agreement">
+            <input type="checkbox" id="chk"> <label for="chk">개인정보 취급방침을 읽었으며 이에 동의합니다.</label>
+          </div>
+          <button class="btn-submit">상담신청</button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="https://kit.fontawesome.com/3dee041feb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

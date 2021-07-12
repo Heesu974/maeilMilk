@@ -288,17 +288,17 @@ transition: 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 
 }
 .intro-items>div:nth-of-type(1) {
-  background: url(maeil_images/items01.jpg) no-repeat center bottom;
+  background: url(images/items01.jpg) no-repeat center bottom;
   background-size: cover;
 }
 .intro-items>div:nth-of-type(2) {
-  background: url(maeil_images/items02.jpg) no-repeat center center;
+  background: url(images/items02.jpg) no-repeat center center;
   background-size: cover;
 }
 
 
 .intro-items>div:nth-of-type(3) {
-  background: url(maeil_images/items03.jpg) no-repeat center center;
+  background: url(images/items03.jpg) no-repeat center center;
   background-size: cover;
 }
 input[id=tab1]:checked~.tabs .intro-items {
