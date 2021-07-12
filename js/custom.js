@@ -54,6 +54,47 @@ $('.gnb a').click(function () {
 })
 
 
+//section-first
 
+const item = document.querySelectorAll('.item');
+console.log(item);
+const itemArr = Array.from(item);
+console.log(itemArr);
 
+function slideUpHandler(e) {
+    console.log(e.target.next);
+    e.target.classList.add('active');
+}
+function slideDownHandler(e) {
+    console.log(e.target.next);
+    e.target.classList.remove('active');
+}
+for (let i = 0; i < itemArr.length; i++) {
+    itemArr[i].addEventListener('mouseenter', slideUpHandler)
+}
+for (let i = 0; i < itemArr.length; i++) {
+    itemArr[i].addEventListener('mouseleave', slideDownHandler)
+}
 
+//section-second
+
+const newsCard = document.getElementsByClassName('news-card');
+console.log(newsCard);
+const newsCardArr = Array.from(newsCard);
+console.log(newsCardArr);
+
+function changeColorHandler(e) {
+
+    e.target.classList.add('fill');
+}
+function changeColorHandler2(e) {
+
+    e.target.classList.remove('fill');
+}
+
+for (let i = 0; i < newsCardArr.length; i++) {
+    newsCardArr[i].addEventListener('mouseenter', changeColorHandler);
+}
+for (let i = 0; i < newsCardArr.length; i++) {
+    newsCardArr[i].addEventListener('mouseleave', changeColorHandler2);
+}

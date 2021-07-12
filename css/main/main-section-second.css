@@ -1,0 +1,50 @@
+/* SECTION SECOND*/
+.testimonial {
+    padding: 100px 0;
+    background-color: peru;
+  }
+  .testimonial-content {
+  text-align: center;
+  }
+  .testimonial-content h2 {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .testimonial-content h2 b {
+    font-weight: 500;
+  }
+  .testimonial-content hr {
+    border: none;
+    border-bottom: 4px solid royalblue;
+    
+    width: 120px;
+    margin: 30px auto;
+  }
+  /* hr은 블록 요소이기 때문에 상화좌우 영역을 가지고 있다. 그렇기 때문에 일반적으로 border 를 none 으로 초기화 시키는 것이 좋다.  */
+ 
+  .client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+.client img {
+  width: 85px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.client span {
+ 
+  display: block;
+  /* width: 100%; */
+  text-align: left;
+}
+.client span b {
+  display: block;
+}
+.comment {
+  font-size: 16px;
+  line-height: 1.6em;
+  padding-right: 15px;
+}
