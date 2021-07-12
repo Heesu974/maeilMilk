@@ -1,0 +1,116 @@
+/* SECTION fOURTH 매일뉴스*/
+.news-wrapper {
+    height: 300px;
+    
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    background: url(../../images/news-background.jpg)no-repeat center bottom;
+    background-size: cover;
+    filter: opacity(0.9);
+  }
+  .news-wrapper:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, rgb(24, 78, 144, 0.8) 0%, rgb(24, 78, 144, 0.5) 100%);
+      filter: grayscale(0.2);
+  }
+  .news-wrapper h1 {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-size: 30px;
+      line-height: 50px;
+      font-weight: 500;
+      margin: 30px 0;
+      
+  }
+  .news-card {
+    background: #fff;
+    width: 700px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 20px;
+    animation: slideAni 15s linear infinite;
+    animation-delay: calc(3s * var(--delay));
+  }
+  .news-card:last-child {
+      animation-delay: calc(-3s * var(--delay));
+  }
+  
+  .news-wrapper:hover .news-card {
+    
+      animation-play-state: paused;
+  }
+ 
+  .news-card a,
+  .news-content span:first-child {
+      font-size: 14px;
+      opacity: 0.9;
+      
+  }
+  .news-card a {
+      display: inline-block;
+      padding: 5px 20px;
+      
+      border-radius: 5px;
+      box-sizing: border-box;
+  }
+ 
+  .news-card.fill {
+      background-color: var(--main-point-color);
+      color: #fff;
+      
+  }
+  .news-card.fill a {
+      color: #fff;
+      font-weight: bold;
+      border: 2px solid #fff;
+  }
+  .news-content span:first-child {
+    
+    display: inline-block;
+    margin-right: 40px;
+}
+  @keyframes slideAni {
+      0% {
+          opacity: 0;
+          transform: translateY(100%) scale(0.5);
+      }
+      5%, 20% {
+          opacity: 0.4;
+          transform: translateY(100%) scale(0.7);
+      }
+      25%, 40% {
+          opacity: 1;
+          pointer-events: auto;
+          transform: translateY(0) scale(1);
+      }
+      45%, 60% {
+          opacity: 0.4;
+          transform: translateY(-100%) scale(0.7);
+      }
+      65%, 100% {
+        opacity: 0.4;
+        transform: translateY(-100%) scale(0);
+    }
+    
+  }
+
+
+ 
