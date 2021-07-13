@@ -1,7 +1,8 @@
 /* SECTION SECOND*/
 .testimonial {
     padding: 100px 0;
-    background-color: peru;
+    background-color: var(--main-point-color);
+    color: #fff;
   }
   .testimonial-content {
   text-align: center;
@@ -16,35 +17,70 @@
   }
   .testimonial-content hr {
     border: none;
-    border-bottom: 4px solid royalblue;
+    border-bottom: 4px solid #fff;
     
     width: 120px;
     margin: 30px auto;
   }
   /* hr은 블록 요소이기 때문에 상화좌우 영역을 가지고 있다. 그렇기 때문에 일반적으로 border 를 none 으로 초기화 시키는 것이 좋다.  */
- 
+
   .client {
+    height: 250px;
+    width: 350px;
+   
+    box-sizing: border-box;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    position: relative;
   }
-.client img {
-  width: 85px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-.client span {
+  div.big {
+
+width: 200px;
+height: 200px;
+
+
+
+  }
+  
+  div.sub {
+  
+     width: 60px;
+    
+     margin-left: 10px;
+     
+    
+
+  }
+  div.big img,
+  div.sub img {
+    width: 100%;
+    height: 100%;
+  
+  
+  }
+   
+  p.userName {
+    display: block;
  
-  display: block;
-  /* width: 100%; */
-  text-align: left;
-}
-.client span b {
-  display: block;
-}
+    
+    padding: 30px 0 20px 0;
+    font-size: 20px;
+    position: relative;
+  }
+  p.userName:after {
+    content: '님';
+    position: absolute;
+    right: 30%;
+    bottom: 30%;
+    font-size: 16px;
+    color: #fff;
+  }
+
 .comment {
   font-size: 16px;
   line-height: 1.6em;
   padding-right: 15px;
+  padding: 5px 30px 20px 30px;
 }
