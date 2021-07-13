@@ -80,6 +80,8 @@ header {
     font-size: 20px;
   
   }
+  
+  
   .gnb li:last-child a {
     margin-right: 0;
   }
