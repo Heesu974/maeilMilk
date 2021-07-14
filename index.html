@@ -31,10 +31,10 @@
           <a href="#none"><img src="images/maeil_logo.png" alt=""></a>
         </div>
         <ul class="gnb">
-          <li><a href="#none">매일유업</a></li>
-          <li><a href="#none">매일소통</a></li>
-          <li><a href="#none">매일제품</a></li>
-          <li><a href="#none">매일뉴스</a></li>
+          <li><a href="#section-first">매일유업</a></li>
+          <li><a href="#section-second">매일소통</a></li>
+          <li><a href="#section-third">매일제품</a></li>
+          <li><a href="#section-fourth">매일뉴스</a></li>
 
           <li><a href="consult-service.html">제품상담</a></li>
           <li><a href="login.html">로그인</a></li>
@@ -82,22 +82,29 @@
       </div>
 
     </main>
-    <section class="ranking" id="ranking">
+    <section class="ranking" id="section-first">
       <div class="inner">
         <div class="ranking-content">
           <h2>매일의 이야기</h2>
           <div class="items">
             <div class="item">
               <div class="up-image up-image1">
-                <h3>윤리경영</h3>
+                <!-- <h3>윤리경영</h3> -->
               </div>
-              <div class="down-description">
-                <!-- <span class="badge must">must go</span> -->
+              <div class="fade-description">'
+                <div class="fade-content">
 
-                <p>
-                  우리는 건강한 매일, 맛있는 매일, <br> 새로운 매일을 경영합니다.
-                </p>
-                <!-- <a class="btn-explorer" href="#none">explore <img src="images/icon-arrow.png" alt=""></a> -->
+                  <h3>윤리경영</h3>
+                  <a class="button round modalBtn" data-alt="modal1" href="">자세히</a>
+
+                </div>
+
+              </div>
+
+            </div>
+            <div class="modal modal1">
+              <div class="full-img__container">
+                <img src="images/section-first-1-modal.png" alt="" class="full-img">
               </div>
             </div>
             <div class="item">
@@ -115,16 +122,24 @@
             </div>
             <div class="item">
               <div class="up-image up-image3">
-                <h3>윤리경영</h3>
+                <!-- <h3>윤리경영</h3> -->
               </div>
-              <div class="down-description">
+              <div class="fade-description">'
+                <div class="fade-content">
 
-                <p>
-                  우리는 건강한 매일, 맛있는 매일, <br> 새로운 매일을 경영합니다.
-                </p>
+                  <h3>가치체계</h3>
+                  <a class="button round modalBtn" data-alt="modal3" href="">자세히</a>
+
+                </div>
 
               </div>
             </div>
+            <div class="modal modal3">
+              <div class="full-img__container">
+                <img src="images/section-first-3-modal.png" alt="" class="full-img">
+              </div>
+            </div>
+
             <div class="item">
               <div class="up-image up-image4">
 
@@ -139,82 +154,19 @@
               </div>
             </div>
 
-          </div>
 
+
+          </div>
         </div>
+
+
+
       </div>
     </section>
-    <!-- <section class="testimonial" id="testimonial">
+    <section class="testimonial" id="section-second">
       <div class="inner">
         <div class="testimonial-content">
-          <h2>위에 ranking section과 바탕화면을 공유하고, 상하치즈 등 오토플레이로 돌리기</h2>
-          <hr>
-          <div class="myslider">
-            <div>
-              <p class="client">
-                <img src="images/items03.jpg" alt="">
-                <span><b>seoulseoul</b> seoul korea</span>
-              </p>
-              <p class="comment">
-
-              </p>
-            </div>
-            <div>
-              <p class="client">
-                <img src="images/items03.jpg" alt="">
-                <span><b>seoulseoul</b> seoul korea</span>
-              </p>
-              <p class="comment">
-
-              </p>
-            </div>
-            <div>
-              <p class="client">
-                <img src="images/items03.jpg" alt="">
-                <span><b>seoulseoul</b> seoul korea</span>
-              </p>
-              <p class="comment">
-
-              </p>
-            </div>
-            <div>
-              <p class="client">
-                <img src="images/items03.jpg" alt="">
-                <span><b>매일유업</b> seoul korea</span>
-              </p>
-              <p class="comment">
-
-              </p>
-            </div>
-            <div>
-              <p class="client">
-                <img src="images/items03.jpg" alt="">
-                <span><b>매일유업</b> seoul korea</span>
-              </p>
-              <p class="comment">
-
-              </p>
-            </div>
-            <div>
-              <p class="client">
-                <img src="images/items03.jpg" alt="">
-                <span><b>매일유업</b> seoul korea</span>
-              </p>
-              <p class="comment">
-
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-
-    <section class="testimonial" id="testimonial">
-      <div class="inner">
-        <div class="testimonial-content">
-          <h2>매일유업과 함께하는<b>고객님들의</b>목소리</h2>
+          <h2>매일유업과 고객님이 함께하는 <b>"소통"</b></h2>
           <hr>
           <div class="myslider">
             <div class="slideItem">
@@ -317,10 +269,16 @@
             </div>
 
           </div>
+          <div class="arrow_prev">
+            <span><i class="fas fa-chevron-left"></i></span>
+          </div>
+          <div class="arrow_next">
+            <span><i class="fas fa-chevron-right"></i></span>
+          </div>
         </div>
       </div>
     </section>
-    <section class="callaction">
+    <section class="callaction" id="section-third">
 
       <div class="callaction-heading">
         <video muted autoplay loop>
@@ -329,108 +287,123 @@
 
       </div>
     </section>
-    <section class="blog" id="blog">
+    <section class="blog" id="section-fourth">
       <div class="inner">
-        <div class="blog-content">
-          <div class="blog-header">
-            <h6>여기는 없애고</h6>
-            <h2>매일유업</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa officia aut, recusandae libero sed neque?
-              Architecto quibusdam incidunt voluptatibus nobis.</p>
-            <a class="btn-explorer" href="#none">read more <img src="images/icon-arrow.png" alt=""></a>
+        <div class="blog-header">
+          <h6>매일제품</h6>
+          <h2>브랜드</h2>
+          <p>모두가 건강하고 행복한 매일이 될 수 있도록 <br> 건강한 매일, 맛있는 매일, 새로운 매일을 위한 매일유업 브랜드 </p>
 
-          </div>
-          <hr class="divider">
+
+        </div>
+        <hr class="divider">
+        <div class="blog-content">
+
 
           <div class="post-content">
             <div class="recent-post-items">
-              <h6>인재채용</h6>
-              <div class="post-item">
-                <div class="post-image">
-                  <img src="" alt="">
+              <!-- <h6>인재채용</h6> -->
+
+
+              <a class="brandLink" href="#none">
+                <div class="post-item">
+                  <div class="post-image">
+                    <img src="images/brand1.jpeg" alt="">
+                  </div>
+                  <div class="post-description">
+                    <h3>매일 우유</h3>
+                    <p>소비자의 건강한 하루를 위해 항상 새로운 생각으로 <br> 끊임 없이 연구하는
+                      매일유업의 대표 우유 브랜드
+                      <span>살펴보기</span>
+                    </p>
+
+                  </div>
                 </div>
+              </a>
 
 
-                <div class="post-description">
-                  <h3>윤리경영</h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, eligendi dolorum? Autem repudiandae
-                    adipisci blanditiis debitis omnis nos
-                    <span>July 12, 2020</span>
-                  </p>
-
-                </div>
-              </div>
               <hr class="divider">
-              <div class="post-item">
-                <div class="post-image">
-                  <img src="images/items03.jpg" alt="">
+              <a class="brandLink" href="#none">
+                <div class="post-item">
+                  <div class="post-image">
+                    <img src="images/brand2.jpg" alt="">
+                  </div>
+
+
+                  <div class="post-description">
+                    <h3>매일 발효유</h3>
+                    <p>건강한 식문화를 선도하는 프로바이오틱 발효유 브랜드
+                      <span>살펴보기</span>
+                    </p>
+
+                  </div>
                 </div>
 
+              </a>
 
-                <div class="post-description">
-                  <h3> 앱솔루트 동영상</h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, eligendi dolorum? Autem repudiandae
-                    adipisci blanditiis debitis omnis nos
-                    <span>July 12, 2020</span>
-                  </p>
-
-                </div>
-              </div>
               <hr class="divider">
-              <div class="post-item">
-                <div class="post-image">
-                  <img src="images/items03.jpg" alt="">
+              <a class="brandLink" href="#none">
+                <div class="post-item">
+                  <div class="post-image">
+                    <img src="images/brand3.jpg" alt="">
+                  </div>
+
+
+                  <div class="post-description">
+                    <h3>매일 치즈</h3>
+                    <p>좋은 재료, 엄격한 공정을 통해 완성됩니다. <br>
+                      축적된 노하우와 좋은 원료로 다양한 제품을 생산하는 치즈전문브랜드
+                      <span class="look">살펴보기</span>
+                    </p>
+
+                  </div>
                 </div>
-
-
-                <div class="post-description">
-                  <h3>바리스타 룰스 </h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, eligendi dolorum? Autem repudiandae
-                    adipisci blanditiis debitis omnis nos
-                    <span>July 12, 2020</span>
-                  </p>
-
-                </div>
-              </div>
+              </a>
             </div>
-            <div class="shared-post-items">
-              <h6>most shared</h6>
+          </div>
+          <div class="shared-post-items">
+            <!-- <h6>most shared</h6> -->
+            <a class="brandLink" href="#none">
               <div class="post-item">
                 <div class="post-image">
-                  <img src="images/items03.jpg" alt="">
+                  <img src="images/brand4.jpeg" alt="">
                 </div>
 
 
                 <div class="post-description">
-                  <h3>셀렉스 밀크세라마이드</h3>
-                  <p>Lorem ipsum dolor sit, amet consecte
-                    adipis
-                    <span>July 12, 2020</span>
+                  <h3>매일 유아식</h3>
+                  <p>모유를 기준으로 한 절대원칙으로 아기에게 딱 맞는 제품을 만드는 유아식 브랜드
+                    <span>살펴보기</span>
                   </p>
 
                 </div>
               </div>
-              <hr class="divider">
+            </a>
+            <hr class="divider">
+            <a href="" class="brandLink">
               <div class="post-item">
                 <div class="post-image">
-                  <img src="images/items03.jpg" alt="">
+                  <img src="images/brand5.jpeg" alt="">
                 </div>
 
 
                 <div class="post-description">
-                  <h3>인재채용</h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing
-                    <span>July 12, 2020</span>
+                  <h3>매일 건강식</h3>
+                  <p>'과학에 근거한 고객맞춤형 평생건강관리'를 실현하고자 합니다.
+                    <span>살펴보기</span>
                   </p>
 
                 </div>
               </div>
-            </div>
+
+            </a>
+
           </div>
         </div>
       </div>
+
     </section>
-    <section class="news-wrapper">
+    <section class="news-wrapper" id="section-fifth">
       <h1>매일 뉴스를 확인하세요!</h1>
       <div class="news-card" style="--delay:-1;">
         <div class="news-content">
@@ -501,7 +474,7 @@
 
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="https://kit.fontawesome.com/3dee041feb.js" crossorigin="anonymous"></script>
-  <script src="js/slick-1.8.1/slick/slick.js"></script>
+  <script src="js/slick-1.8.1/slick/slick.min.js"></script>
   <script src="js/colorbox/jquery.colorbox.js"></script>
   <script src="js/custom.js"></script>
 </body>
