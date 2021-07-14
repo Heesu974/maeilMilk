@@ -16,11 +16,13 @@
     width: 1300px;
   
     height: 100%;
+    display: flex;
+    justify-content: center;
     
   }
   video {
     
-    width: 100%;
+    width: 50%;
     height: 100%;
    
    filter: grayscale(0.7);

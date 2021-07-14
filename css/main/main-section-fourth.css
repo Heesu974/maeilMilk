@@ -2,40 +2,72 @@
   
 .blog-content {
     padding: 50px 0;
+    display: flex;
    }
    
-   
+  
+   .post-item {
+     /* border: 1px solid black; */
+     /* padding: 20px 0; */
+     box-sizing: border-box;
+    
+     border-radius: 30px 0 30px 0;
+     /* width: 100%; */
+
+     
+   }
+   .recent-post-items .post-item {
+    width: 95%;
+   }
+   /* .recent-post-items {
+     border: 1px solid red;
+     box-sizing: border-box;
+   }
+   .shared-post-items {
+     border: 1px solid blue;
+    box-sizing: border-box;
+   } */
    .blog-header h6,
    .recent-post-items h6,
    .shared-post-items h6 {
      text-transform: uppercase;
      font-size: 16px;
-     color: royalblue;
-     margin-bottom: 30px;
+    
+     margin: 50px 0 30px 0;
    }
    
    .blog-header h2
      {
      text-transform: uppercase;
      font-size: 48px;
+     margin-bottom: 30px;
+     font-weight: 500;
+      color: var(--main-point-color);
    }
    .blog-header p {
-     font-size: 28px;
+     font-size: 20px;
+    
+     font-weight: 300;
      line-height: 1.2em;
    }
    
    .post-content {
      display: flex;
-     justify-content: space-between;
+     /* justify-content: space-between; */
    
    }
    
    
    hr.divider {
-   margin: 50px 0;
+   margin: 50px 0 0 0;
+   border: 0;
+   border-top: 1px solid var(--main-point-color);
+   opacity: 0.5;
    }
+
    .post-content hr.divider {
      margin: 40px 0;
+    
    }
    
    .recent-post-items h6,
@@ -48,8 +80,25 @@
      display: flex;
      
      
+     
    
    }
+   a.brandLink {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    /* border: 1px solid red;
+    box-sizing: border-box; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+a.brandLink:hover .post-item {
+ background-color: var(--main-point-color);
+ color: #fff;
+}
+ 
    
    .post-image {
      
@@ -58,6 +107,9 @@
      
      width: 360px;
     height: 230px;
+    /* border: 1px solid pink;
+    box-sizing: border-box; */
+  
     
    }
    .post-image img {
@@ -65,17 +117,27 @@
      height: 100%;
    }
    .post-description {
-     flex: 3;
+     display: inline-block;
+
+   flex: 2;
+   padding: 10px;
+   height: 100%;
+     /* border: 1px solid brown;
+     box-sizing: border-box; */
+     
      
    
    }
    .post-description h3 {
    font-size: 24px;
    text-transform: uppercase;
+   margin-bottom: 20px;
    }
    .post-description p {
      font-size: 18px;
      line-height: 1.6em;
+     font-weight: 400;
+     opacity: 0.7;
      
      
    }
@@ -85,7 +147,7 @@
      margin-top: 20px;
    }
    .recent-post-items .post-description {
-     margin: 0 30px;
+    width: 100%;
    }
    .recent-post-items  hr.divider {
      width: 96%;
