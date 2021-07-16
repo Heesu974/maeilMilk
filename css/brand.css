@@ -1,0 +1,450 @@
+@import "variables.css";
+
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.5em;
+    /* background-color: #e2dfdf; */
+
+  }
+
+
+  header {
+    border-bottom: 1px solid lightgray;
+    background-color: #fff;
+    height: 60px;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+  }
+
+  header a img {
+    width: 60px;
+  }
+
+
+  .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-top: 50px;
+      /* border: 1px solid blue; */
+  }
+  .nav {
+      width: 100%;
+      height: 100%;
+      /* border: 1px solid black; */
+  }
+  .nav h1 {
+      font-size: 60px;
+      font-weight: 600;
+      color: var(--main-point-color);
+      text-align: center;
+      margin-top: 20px;
+
+  }
+  .nav .nav-brand-list {
+      display: flex;
+      width: 600px;
+      /* border: 1px solid red; */
+      margin: 0 auto;justify-content: space-between;
+      height: 60px;
+      margin-top: 50px;
+  }
+  .nav-brand-list li {
+     
+      line-height: 60px;
+      font-size: 25px;
+      width: 100%;
+      text-align: center;
+  }
+  .nav-brand-list a {
+      /* border: 1px solid green; */
+      display: block;
+      width: 100%;
+  }
+  .card-list {
+      /* border: 1px solid blue; */
+      width: 900px;
+      margin: 0 auto;
+      padding: 50px;
+  }
+  .card {
+      width: 100%;
+      height: 300px;
+      border:1px solid var(--main-point-color);
+      margin-bottom: 30px;
+      display: flex;
+      border-radius: 30px 0 30px 0;
+      overflow: hidden;
+  }
+  .card__images {
+      flex: 3;
+      /* border: 1px solid green; */
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-gap: 2px;
+      
+      
+  }
+
+  .card__image {
+    
+   
+    background: #fff;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    
+  }
+  .milk-1 {
+     background-image: url(../images/brand-card-milk-1/milk1.jpg);
+  }
+  .milk-2 {
+    background-image: url(../images/brand-card-milk-1/milk2.jpg);
+  }
+  .milk-3 {
+    background-image: url(../images/brand-card-milk-1/milk3.jpg);
+  }
+  .milk-4 {
+    background-image: url(../images/brand-card-milk-1/milk4.jpg);
+  }
+  .milk-5 {
+    background-image: url(../images/brand-card-milk-1/milk5.jpg);
+  }
+  .milk-6 {
+    background-image: url(../images/brand-card-milk-1/milk6.jpg);
+  }
+  .milk-7 {
+    background-image: url(../images/brand-card-milk-1/milk7.jpg);
+  }
+  .milk-8 {
+    background-image: url(../images/brand-card-milk-1/milk8.jpg);
+  }
+  .milk-second-1 {
+    background-image: url(../images/brand-card-milk-2/milk-second-1.jpg);
+ }
+ .milk-second-2 {
+   background-image: url(../images/brand-card-milk-2/milk-second-2.jpg);
+ }
+ .milk-second-3 {
+   background-image: url(../images/brand-card-milk-2/milk-second-3.jpg);
+ }
+ .milk-second-4 {
+   background-image: url(../images/brand-card-milk-2/milk-second-4.jpg);
+ }
+ .milk-second-5 {
+   background-image: url(../images/brand-card-milk-2/milk-second-5.jpeg);
+ }
+ .milk-third-1 {
+    background-image: url(../images/brand-card-milk-3/milk-third-1.jpg);
+  }
+  .milk-third-2 {
+    background-image: url(../images/brand-card-milk-3/milk-third-2.jpg);
+  }
+  .milk-fourth-1 {
+    background-image: url(../images/brand-card-milk-4/milk-fourth-1.jpg);
+ }
+ .milk-fourth-2 {
+   background-image: url(../images/brand-card-milk-4/milk-fourth-2.jpg);
+ }
+ .milk-fourth-3 {
+   background-image: url(../images/brand-card-milk-4/milk-fourth-3.jpeg);
+ }
+ .milk-fourth-4 {
+   background-image: url(../images/brand-card-milk-4/milk-fourth-4.jpg);
+ }
+ .milk-fourth-5 {
+   background-image: url(../images/brand-card-milk-4/milk-fourth-5.jpg);
+ }
+ .milk-fifth-1 {
+    background-image: url(../images/brand-card-milk-5/milk-fifth-1.jpeg);
+ }
+ .milk-fifth-2 {
+   background-image: url(../images/brand-card-milk-5/milk-fifth-2.jpg);
+ }
+ .milk-fifth-3 {
+   background-image: url(../images/brand-card-milk-5/milk-fifth-3.jpg);
+ }
+ .milk-fifth-4 {
+   background-image: url(../images/brand-card-milk-5/milk-fifth-4.jpg);
+ }
+ .milk-fifth-5 {
+   background-image: url(../images/brand-card-milk-5/milk-fifth-5.jpg);
+ }
+ .milk-fifth-6 {
+    background-image: url(../images/brand-card-milk-5/milk-fifth-6.jpg);
+  }
+  .milk-fifth-7 {
+    background-image: url(../images/brand-card-milk-5/milk-fifth-7.jpg);
+  }
+  .milk-sixth-1 {
+    background-image: url(../images/brand-card-milk-6/milk-sixth-1.jpeg);
+ }
+ .milk-sixth-2 {
+   background-image: url(../images/brand-card-milk-6/milk-sixth-2.png);
+ }
+ .milk-sixth-3 {
+   background-image: url(../images/brand-card-milk-6/milk-sixth-3.jpg);
+ }
+ .milk-seventh-1 {
+    background-image: url(../images/brand-card-milk-7/milk-seventh-1.jpeg);
+ }
+ .milk-seventh-2 {
+   background-image: url(../images/brand-card-milk-7/milk-seventh-2.jpg);
+ }
+ .milk-seventh-3 {
+   background-image: url(../images/brand-card-milk-7/milk-seventh-3.jpg);
+ }
+ .fermented-first-1 {
+    background-image: url(../images/brand-card-fermented-1/fermented-first-1.jpg);
+ }
+ .fermented-first-2{
+    background-image: url(../images/brand-card-fermented-1/fermented-first-2.jpg);
+ }
+ .fermented-first-3 {
+    background-image: url(../images/brand-card-fermented-1/fermented-first-3.jpg);
+ }
+ .fermented-first-4{
+    background-image: url(../images/brand-card-fermented-1/fermented-first-4.jpg);
+ }
+ .fermented-first-5 {
+    background-image: url(../images/brand-card-fermented-1/fermented-first-5.jpg);
+ }
+ .fermented-first-6 {
+    background-image: url(../images/brand-card-fermented-1/fermented-first-6.jpg);
+ }
+ .fermented-first-7{
+    background-image: url(../images/brand-card-fermented-1/fermented-first-7.jpg);
+ }
+ .fermented-first-8{
+    background-image: url(../images/brand-card-fermented-1/fermented-first-8.jpg);
+ }
+ .fermented-second-1 {
+    background-image: url(../images/brand-card-fermented-2/fermented-second-1.jpeg);
+ }
+ .fermented-second-2{
+    background-image: url(../images/brand-card-fermented-2/fermented-second-2.jpg);
+ }
+ .fermented-second-3 {
+    background-image: url(../images/brand-card-fermented-2/fermented-second-3.jpg);
+ }
+ .fermented-third-1 {
+    background-image: url(../images/brand-card-fermented-3/fermented-third-1.jpeg);
+ }
+ .fermented-third-2{
+    background-image: url(../images/brand-card-fermented-3/fermented-third-2.jpg);
+ }
+ .fermented-third-3 {
+    background-image: url(../images/brand-card-fermented-3/fermented-third-3.jpg);
+ }
+ .fermented-third-4{
+    background-image: url(../images/brand-card-fermented-3/fermented-third-4.jpg);
+ }
+ .fermented-third-5 {
+    background-image: url(../images/brand-card-fermented-3/fermented-third-5.jpg);
+ }
+ .fermented-third-6 {
+    background-image: url(../images/brand-card-fermented-3/fermented-third-6.jpg);
+ }
+ .fermented-fourth-1 {
+    background-image: url(../images/brand-card-fermented-4/fermented-fourth-1.jpeg);
+ }
+ .fermented-fourth-2{
+    background-image: url(../images/brand-card-fermented-4/fermented-fourth-2.jpg);
+ }
+ .fermented-fifth-1 {
+    background-image: url(../images/brand-card-fermented-5/fermented-fifth-1.jpeg);
+ }
+ .fermented-fifth-2{
+    background-image: url(../images/brand-card-fermented-5/fermented-fifth-2.jpg);
+ }
+ .fermented-sixth-1 {
+    background-image: url(../images/brand-card-fermented-6/fermented-sixth-1.jpeg);
+ }
+ .fermented-sixth-2{
+    background-image: url(../images/brand-card-fermented-6/fermented-sixth-2.jpg);
+ }
+ .fermented-sixth-3{
+    background-image: url(../images/brand-card-fermented-6/fermented-sixth-3.jpg);
+ }
+ .fermented-seventh-1 {
+    background-image: url(../images/brand-card-fermented-7/fermented-seventh-1.jpeg);
+ }
+ .chease-first-1 {
+    background-image: url(../images/brand-card-chease-1/chease-first-1.jpeg);
+ }
+ .chease-first-2{
+    background-image: url(../images/brand-card-chease-1/chease-first-2.jpg);
+ }
+ .chease-first-3 {
+    background-image: url(../images/brand-card-chease-1/chease-first-3.jpg);
+ }
+ .chease-first-4{
+    background-image: url(../images/brand-card-chease-1/chease-first-4.jpg);
+ }
+ .chease-first-5 {
+    background-image: url(../images/brand-card-chease-1/chease-first-5.jpg);
+ }
+ .chease-first-6 {
+    background-image: url(../images/brand-card-chease-1/chease-first-6.jpg);
+ }
+ .chease-first-7{
+    background-image: url(../images/brand-card-chease-1/chease-first-7.jpg);
+ }
+ .chease-first-8{
+    background-image: url(../images/brand-card-chease-1/chease-first-8.jpg);
+ }
+ .chease-second-1 {
+    background-image: url(../images/brand-card-chease-2/chease-second-1.jpeg);
+ }
+ .chease-second-2{
+    background-image: url(../images/brand-card-chease-2/chease-second-2.jpg);
+ }
+ .chease-second-3 {
+    background-image: url(../images/brand-card-chease-2/chease-second-3.jpg);
+ }
+ .chease-second-4{
+    background-image: url(../images/brand-card-chease-2/chease-second-4.jpg);
+ }
+ .chease-second-5 {
+    background-image: url(../images/brand-card-chease-2/chease-second-5.jpg);
+ }
+ .chease-second-6 {
+    background-image: url(../images/brand-card-chease-2/chease-second-6.jpg);
+ }
+ .chease-second-7{
+    background-image: url(../images/brand-card-chease-2/chease-second-7.jpg);
+ }
+ .chease-second-8{
+    background-image: url(../images/brand-card-chease-2/chease-second-8.jpg);
+ }
+ .baby-first-1 {
+    background-image: url(../images/brand-card-baby-1/baby-first-1.jpeg);
+ }
+ .baby-first-2{
+    background-image: url(../images/brand-card-baby-1/baby-first-2.jpg);
+ }
+ .baby-first-3 {
+    background-image: url(../images/brand-card-baby-1/baby-first-3.jpg);
+ }
+ .baby-first-4{
+    background-image: url(../images/brand-card-baby-1/baby-first-4.jpg);
+ }
+ .baby-first-5 {
+    background-image: url(../images/brand-card-baby-1/baby-first-5.jpg);
+ }
+ .baby-first-6 {
+    background-image: url(../images/brand-card-baby-1/baby-first-6.jpg);
+ }
+ .baby-first-7{
+    background-image: url(../images/brand-card-baby-1/baby-first-7.jpg);
+ }
+ .baby-first-8{
+    background-image: url(../images/brand-card-baby-1/baby-first-8.jpg);
+ }
+ .baby-second-1 {
+    background-image: url(../images/brand-card-baby-2/baby-second-1.jpeg);
+ }
+ .baby-second-2{
+    background-image: url(../images/brand-card-baby-2/baby-second-2.jpg);
+ }
+ .baby-second-3 {
+    background-image: url(../images/brand-card-baby-2/baby-second-3.jpg);
+ }
+ .baby-second-4{
+    background-image: url(../images/brand-card-baby-2/baby-second-4.jpg);
+ }
+ .baby-second-5 {
+    background-image: url(../images/brand-card-baby-2/baby-second-5.jpg);
+ }
+ .baby-second-6 {
+    background-image: url(../images/brand-card-baby-2/baby-second-6.jpg);
+ }
+ .baby-second-7{
+    background-image: url(../images/brand-card-baby-2/baby-second-7.jpg);
+ }
+ .baby-second-8{
+    background-image: url(../images/brand-card-baby-2/baby-second-8.jpg);
+ }
+ .health-first-1 {
+    background-image: url(../images/brand-card-health-1/health-first-1.jpeg);
+ }
+ .health-first-2{
+    background-image: url(../images/brand-card-health-1/health-first-2.jpg);
+ }
+ .health-first-3 {
+    background-image: url(../images/brand-card-health-1/health-first-3.jpg);
+ }
+ .health-first-4{
+    background-image: url(../images/brand-card-health-1/health-first-4.jpg);
+ }
+ .health-first-5 {
+    background-image: url(../images/brand-card-health-1/health-first-5.jpg);
+ }
+ .health-first-6 {
+    background-image: url(../images/brand-card-health-1/health-first-6.jpg);
+ }
+ .health-first-7{
+    background-image: url(../images/brand-card-health-1/health-first-7.jpg);
+ }
+ .health-first-8{
+    background-image: url(../images/brand-card-health-1/health-first-8.jpg);
+ }
+ .health-second-1 {
+    background-image: url(../images/brand-card-health-2/health-second-1.jpeg);
+ }
+ .health-second-2{
+    background-image: url(../images/brand-card-health-2/health-second-2.jpg);
+ }
+ .health-second-3 {
+    background-image: url(../images/brand-card-health-2/health-second-3.jpg);
+ }
+ .health-second-4{
+    background-image: url(../images/brand-card-health-2/health-second-4.jpg);
+ }
+  .card__description {
+      flex: 2;
+      /* border: 1px solid black; */
+      box-sizing: border-box;
+      background-color: var(--main-point-color);
+      color: #fff;
+      padding: 30px 5px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+     
+      align-items: center;
+      text-align: center;
+
+      
+
+  }
+  .card__description h1 {
+      font-size: 25px;
+      padding: 10px 0;
+  }
+  hr {
+      border: none;
+      border: 2px solid #fff;
+      width: 70px;
+      border-radius: 2px;
+      margin-bottom: 20px;
+  }
+.card__description h2 {
+    padding: 10px 0;
+}
+.card__description h3 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 15px;
+    
+
+}
+.card-list {
+    display: none;
+}
+.card-list.open{
+    display: block;
+}
