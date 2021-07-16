@@ -234,7 +234,17 @@ transition: all 0.3s ease-in-out;
   height: 70%;
   border: 1px solid #fff;
   overflow: scroll;
+  position: relative;
   
+}
+.full-img__container i.fa-times-circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    padding: 10px;
+    color: var(--main-point-color);
+    cursor: pointer;
 }
 img.full-img {
 width: 100%;

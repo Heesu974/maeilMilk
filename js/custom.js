@@ -20,30 +20,6 @@ $('.gnb a').click(function () {
 
 
 
-//main-header --삭제함
-
-// const item = document.querySelectorAll('.item');
-// console.log(item);
-// const itemArr = Array.from(item);
-// console.log(itemArr);
-
-// function slideUpHandler(e) {
-//     console.log(e.target.next);
-//     e.target.classList.add('active');
-// }
-// function slideDownHandler(e) {
-//     console.log(e.target.next);
-//     e.target.classList.remove('active');
-// }
-// for (let i = 0; i < itemArr.length; i++) {
-//     itemArr[i].addEventListener('mouseenter', slideUpHandler)
-// }
-// for (let i = 0; i < itemArr.length; i++) {
-//     itemArr[i].addEventListener('mouseleave', slideDownHandler)
-// }
-
-
-
 
 //main-intro
 
@@ -186,6 +162,10 @@ const modalArr = Array.from(modal);
 console.dir(modalBtnArr);
 const modalAttr = modalBtnArr.filter(item => item.getAttribute('data-alt'));
 console.log(modalAttr);
+const closeBtns = document.querySelectorAll('.fa-times-circle');
+const closeBtnArr = Array.from(closeBtns);
+
+
 function modalOpenHandler(e) {
     e.preventDefault();
     let targetAttr = e.target.getAttribute('data-alt');
@@ -208,5 +188,11 @@ for (let i = 0; i < modalBtnArr.length; i++) {
 }
 
 for (let i = 0; i < modalArr.length; i++) {
-    modalArr[i].addEventListener('click', modalCloseHandler); ''
+    modalArr[i].addEventListener('click', modalCloseHandler);
 }
+closeBtnArr.forEach((closeBtn) => {
+    $(closeBtn).click(function () {
+        const findTargetModal = modalArr.find(item => item.classList.contains('open'));
+        findTargetModal.classList.remove('open');
+    });
+});
