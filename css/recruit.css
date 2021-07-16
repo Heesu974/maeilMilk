@@ -169,10 +169,10 @@ align-items: center;
         }
 
         .bg2 {
-            background: url(../images/recruit-bg2.jpeg )no-repeat left bottom;
+            background: url(../images/recruit-bg2.jpeg )no-repeat center bottom;
             background-size: cover;
            
-            filter: grayscale(0.2);
+            filter: grayscale(0.3);
             /* background: var(--main-point-color); */
 
         }

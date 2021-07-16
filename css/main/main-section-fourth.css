@@ -76,6 +76,9 @@
    }
    
    .shared-post-items {width: 360px;}
+   .shared-post-items hr.divider {
+    margin: 20px 0 30px 0;
+   }
    .post-item {
      display: flex;
      
