@@ -1,5 +1,9 @@
 :root {
     --main-point-color: rgb(24, 78, 144, 0.9);
+    
+    
+    --recruit-border-radius: 5px;
+    --recruit-padding: 5px;
 }
 
 

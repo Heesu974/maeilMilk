@@ -1,4 +1,8 @@
 
+common responsive breakpoints
+
+
+421px to 767px width: most smartphones in landscape mode. 768px to 1023px: most Android tablets and iPads in portrait mode. 1024px to 1365px: most Android tablets and iPads in landscape mode, older desktop/laptop monitors. 1366px and above: iPad PRO, HDready and FullHD desktop laptop monitors.
 
 
 https://www.youtube.com/watch?v=X1RoZ0Oi6BU
@@ -18,3 +22,25 @@ https://stackoverflow.com/questions/6382023/changing-the-color-of-an-hr-element
 
 
 https://www.youtube.com/watch?v=4SQXOA8Z-lo
+
+
+
+
+https://www.youtube.com/watch?v=-qOe8lBAChE
+
+
+
+
+
+
+var information = document.getElementsByClassName("...");
+var info_items = Array.from(information.children); // Extracts all the child elements and transforms them into an Array
+
+info_items.forEach(item => {
+   $(item).click(function() {
+      /* 
+         Your code for when each item is clicked 
+         You can also access data for each item using event.target
+      */
+   });
+});
