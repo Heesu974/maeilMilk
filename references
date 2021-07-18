@@ -68,3 +68,193 @@ AOS startEvent click
   https://stackoverflow.com/questions/43298079/localstorage-not-retaining-data-after-page-reload
 
   https://stackoverflow.com/questions/58789424/localstorage-is-saving-html-as-object-htmldivelement
+
+
+
+
+
+  @media (max-width: 768px) {
+  /* header */
+  nav {
+    width: 100%;
+    padding: 0 20px;
+    
+  }
+  .gnb {
+    flex-direction: column;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 80px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px rgba(0,0,0,0.17);
+    transition: 00.5s;
+  }
+  .gnb.active {
+right: 0;
+  }
+  .gnb li a {
+    display: block;
+    margin: 0;
+   
+    padding: 15px;
+    color: black;
+  }
+  /* trigger */
+  .trigger {
+    display: block;
+    border: 1px solid red;
+    width: 30px;
+    height: 16px;
+    position: absolute;
+    right: 20px;
+    top: 70px;
+  }
+  .trigger span {
+    position: absolute;
+    height: 1px;
+    background-color: black;
+    width: 100%;
+    transition: 0.3s;
+  }
+  .trigger span:nth-child(1){
+    top: 0;
+  }
+  .trigger span:nth-child(2) {
+    top: 50%;
+  }
+  .trigger span:nth-child(3) {
+    top: 100%;
+  }
+  .trigger.active span {
+    background-color: black;
+  }
+  .trigger.active span:nth-child(1){
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .trigger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .trigger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  /* common CSS */
+  .inner {
+    width: 100%;
+    
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  /* intro SECTION */
+  .heading h1 {
+    font-size: 40px;
+  }
+  .heading p {
+    padding: 0;
+  }
+  /* about SECTION */
+  .about-content {
+    flex-direction: column;
+    padding: 50px 0;
+    
+  }
+  .about-content div {
+    padding: 10px;
+  }
+  /* ranking SECTION */
+  .ranking-content {
+    padding: 50px;
+  }
+  .items {
+    flex-direction: column;
+  }
+  .item {
+    width: 100%;
+    height: 600px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+  }
+/* testimonial SECTION */
+.testimonial {
+  padding: 50px 20px;
+}
+/* blog SECTION */
+.blog-header {
+  text-align: center;
+  height: auto;
+}
+.blog-header h6 {
+  font-size: 14px;
+  
+}
+.blog-header h2 {
+  font-size: 30px;
+}
+.blog-header p {
+  font-size: 16px;
+}
+.blog-header .btn-explorer {
+  font-size: 14px;
+}
+.post-content {
+  flex-direction: column;
+}
+.post-item {
+  flex-direction: column;
+  /* text-align: center; */
+}
+.post-image {
+  /* width: 300px;
+  height: 200px; */
+  margin: auto;
+  border-radius: 7px;
+  width: 100%;
+}
+.recent-post-items .post-description {
+  margin: 0;
+}
+.post-description h3 {
+  margin-top: 20px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.shared-post-items {
+  width: 100%;
+}
+.recent-post-items h6,
+.shared-post-items h6 {
+  text-align: center;
+}
+/* callaction SECTION */
+.callaction-heading h2 {
+  font-size: 36px;
+}
+/* festival SECTION */
+.festival {
+  padding: 0 20px;
+}
+.festival-heading h3 {
+  font-size: 22px;
+}
+.btns a {
+  width: 100%;
+  margin: 5px 0;
+  /* 얘는 inner가 없는 section 이다.  */
+}
+/* footer */
+.footer-content {
+  flex-direction: column;
+  
+}
+.footer-content ul {
+  margin-bottom: 20px;
+}
+}
