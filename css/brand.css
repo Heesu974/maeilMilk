@@ -272,53 +272,53 @@ body {
  .fermented-seventh-1 {
     background-image: url(../images/brand-card-fermented-7/fermented-seventh-1.jpeg);
  }
- .chease-first-1 {
-    background-image: url(../images/brand-card-chease-1/chease-first-1.jpeg);
+ .cheese-first-1 {
+    background-image: url(../images/brand-card-cheese-1/cheese-first-1.jpeg);
  }
- .chease-first-2{
-    background-image: url(../images/brand-card-chease-1/chease-first-2.jpg);
+ .cheese-first-2{
+    background-image: url(../images/brand-card-cheese-1/cheese-first-2.jpg);
  }
- .chease-first-3 {
-    background-image: url(../images/brand-card-chease-1/chease-first-3.jpg);
+ .cheese-first-3 {
+    background-image: url(../images/brand-card-cheese-1/cheese-first-3.jpg);
  }
- .chease-first-4{
-    background-image: url(../images/brand-card-chease-1/chease-first-4.jpg);
+ .cheese-first-4{
+    background-image: url(../images/brand-card-cheese-1/cheese-first-4.jpg);
  }
- .chease-first-5 {
-    background-image: url(../images/brand-card-chease-1/chease-first-5.jpg);
+ .cheese-first-5 {
+    background-image: url(../images/brand-card-cheese-1/cheese-first-5.jpg);
  }
- .chease-first-6 {
-    background-image: url(../images/brand-card-chease-1/chease-first-6.jpg);
+ .cheese-first-6 {
+    background-image: url(../images/brand-card-cheese-1/cheese-first-6.jpg);
  }
- .chease-first-7{
-    background-image: url(../images/brand-card-chease-1/chease-first-7.jpg);
+ .cheese-first-7{
+    background-image: url(../images/brand-card-cheese-1/cheese-first-7.jpg);
  }
- .chease-first-8{
-    background-image: url(../images/brand-card-chease-1/chease-first-8.jpg);
+ .cheese-first-8{
+    background-image: url(../images/brand-card-cheese-1/cheese-first-8.jpg);
  }
- .chease-second-1 {
-    background-image: url(../images/brand-card-chease-2/chease-second-1.jpeg);
+ .cheese-second-1 {
+    background-image: url(../images/brand-card-cheese-2/cheese-second-1.jpeg);
  }
- .chease-second-2{
-    background-image: url(../images/brand-card-chease-2/chease-second-2.jpg);
+ .cheese-second-2{
+    background-image: url(../images/brand-card-cheese-2/cheese-second-2.jpg);
  }
- .chease-second-3 {
-    background-image: url(../images/brand-card-chease-2/chease-second-3.jpg);
+ .cheese-second-3 {
+    background-image: url(../images/brand-card-cheese-2/cheese-second-3.jpg);
  }
- .chease-second-4{
-    background-image: url(../images/brand-card-chease-2/chease-second-4.jpg);
+ .cheese-second-4{
+    background-image: url(../images/brand-card-cheese-2/cheese-second-4.jpg);
  }
- .chease-second-5 {
-    background-image: url(../images/brand-card-chease-2/chease-second-5.jpg);
+ .cheese-second-5 {
+    background-image: url(../images/brand-card-cheese-2/cheese-second-5.jpg);
  }
- .chease-second-6 {
-    background-image: url(../images/brand-card-chease-2/chease-second-6.jpg);
+ .cheese-second-6 {
+    background-image: url(../images/brand-card-cheese-2/cheese-second-6.jpg);
  }
- .chease-second-7{
-    background-image: url(../images/brand-card-chease-2/chease-second-7.jpg);
+ .cheese-second-7{
+    background-image: url(../images/brand-card-cheese-2/cheese-second-7.jpg);
  }
- .chease-second-8{
-    background-image: url(../images/brand-card-chease-2/chease-second-8.jpg);
+ .cheese-second-8{
+    background-image: url(../images/brand-card-cheese-2/cheese-second-8.jpg);
  }
  .baby-first-1 {
     background-image: url(../images/brand-card-baby-1/baby-first-1.jpeg);
@@ -442,9 +442,9 @@ body {
     
 
 }
-.card-list {
+/* .card-list {
     display: none;
 }
 .card-list.open{
     display: block;
-}
+} */
