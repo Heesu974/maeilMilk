@@ -1,5 +1,5 @@
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Noto Sans KR', sans-serif; */
     color: #222;
     width: 100vw;
     height: 100vh;
@@ -9,11 +9,11 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: #e2dfdf;
+    /* background-color: #e2dfdf; */
   }
   header {
-    border-bottom: 1px solid lightgray;
-    background-color: #fff;
+    /* border-bottom: 1px solid lightgray;
+    background-color: #fff; */
     height: 60px;
     width: 100%;
     text-align: center;
@@ -27,6 +27,15 @@ body {
   header a img {
     width: 60px;
   }
+  hr.headerHr {
+    border: none;
+    height: 5px;
+    width: 1200px;
+
+    background: linear-gradient(45deg, skyblue, rgb(24, 78, 144));
+    position: absolute;
+    top: 60px;
+}
 
   button {
     cursor: pointer;

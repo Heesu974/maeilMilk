@@ -1,4 +1,9 @@
+@import "footer.css";
+
 @import "variables.css";
+@import "modal.css";
+@import "goTop.css";
+
 
 
 body {
@@ -442,9 +447,9 @@ body {
     
 
 }
-/* .card-list {
+.card-list {
     display: none;
 }
 .card-list.open{
     display: block;
-} */
+}

@@ -1,0 +1,160 @@
+/* footer*/
+footer{
+
+    padding: 30px 0;
+    border-top: 1px solid var(--main-point-color);
+  }
+  .footer-content {
+      height: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+  .content-contact {
+      flex: 1;
+      /* border: 1px solid black; */
+  }
+.content-contact h1 {
+    color: var(--main-point-color);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.content-contact h2 {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.content-contact h3 {
+    font-size: 15px;
+}
+
+
+
+
+  .content-location {
+      flex: 1;
+      /* border: 1px solid blue; */
+  }
+ 
+  .content-location a,
+  .content-location span {
+      display: block;
+    
+     
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+  }
+  .content-location a:hover {
+      color: var(--main-point-color);
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+  .content-sns {
+      flex: 1;
+      /* border: 1px solid red; */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      /* border: 1px solid black; */
+      
+  }
+  .content-sns p {
+      color: var(--main-point-color);
+      font-weight: 500;
+      margin-bottom: 30px;
+   
+      width: 100%;
+      text-align: left;
+      padding-left: 30px;
+
+  }
+  .sns-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      /* border: 1px solid black; */
+      width: 100%;
+  }
+  .sns-container  div{
+      width: 60px;
+      height: 60px;
+     
+      border-radius: 10px 0 10px 0;
+      box-shadow: 0 5px 15px -5px #00000070;
+
+      overflow: hidden;      
+  }
+  .sns-container div a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      /* border: 1px solid green; */
+      position: relative;
+     
+     
+
+  }
+
+
+  .sns-container div a i {
+    font-size: 30px;
+    color: var(--main-point-color);
+    line-height: 60px;
+    z-index: 9999;
+    
+    
+}
+.sns-container div:hover i {
+    color: #fff;
+    transform: scale(1.2);
+  
+
+}
+.sns-container div a:before {
+    content: '';
+    position: absolute;
+    
+    width: 180%;
+    height: 180%;
+    background: var(--main-point-color);
+    transform: rotate(45deg);
+    left: -130%;
+    top: 110%;
+  
+}
+.sns-container div a:hover:before {
+    animation: fill 0.7s 1;
+    top: -25%;
+    left: -35%;
+    
+    
+}
+  @keyframes fill {
+      0%{
+        left: -110%;
+        top: 90%;
+      }
+      /* 50% {
+        left: -67.5%;
+        top: -30%;
+      } */
+      100% {
+        top: -25%;
+        left: -35%;
+      }
+  }
+  
+  
+ 
+  

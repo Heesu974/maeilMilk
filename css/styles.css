@@ -1,6 +1,8 @@
 
+@import "reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import "variables.css";
+
 
 @import "main/main_header.css";
 @import "main/main_intro.css";
@@ -9,7 +11,10 @@
 @import "main/main-section-third.css";
 @import "main/main-section-fourth.css";
 @import "main/main-section-fifth.css";
+@import "footer.css";
 
+@import "modal.css";
+@import "goTop.css";
 
 
 /* common CSS */
@@ -31,61 +36,8 @@ body {
   margin: auto;
  
 }
-.goTop {
-  background: linear-gradient(45deg, skyblue, rgb(24, 78, 144));
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  right: 20px;
-  bottom: -20px;
-  opacity: 0;
-  color: #fff;
-  font-size: 30px;
-  text-align: center;
-  line-height: 50px;
-  transition: 0.5s;
-}
-.goTop.active {
-  bottom: 20px;
-  opacity: 1;
-}
 
 
-/* footer*/
-footer{
-
-  padding: 30px 0;
-}
-.footer-content {
-display: flex;
-justify-content: center;
-
-}
-.footer-content ul {
-
-text-align: center;
-}
-.footer-content ul li {
-  font-weight: 500;
-  color: #333;
-}
-.footer-content ul li a {
-  color: #959595;
-}
-.community {
-flex:1;
-}
-.networks {
-flex: 1;
-}
-.help {
-  flex: 2;
-}
-.help li:last-child{
-  margin-top: 35px;
-  color: black;
-}
 
    
  

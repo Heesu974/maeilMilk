@@ -1,14 +1,14 @@
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Noto Sans KR', sans-serif; */
     line-height: 1.5em;
-    background-color: #e2dfdf;
+    /* background-color: #e2dfdf; */
 
   }
 
 
   header {
-    border-bottom: 1px solid lightgray;
-    background-color: #fff;
+    /* border-bottom: 1px solid lightgray;
+    background-color: #fff; */
     height: 60px;
     text-align: center;
     padding-top: 15px;
@@ -18,7 +18,19 @@ body {
   header a img {
     width: 60px;
   }
+hr.headerHr {
+  
+    border: none;
+    height: 5px;
+    width: 1200px;
 
+    background: linear-gradient(45deg, skyblue, rgb(24, 78, 144));
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
   section {
 
     height: calc(100vh - 60px);
