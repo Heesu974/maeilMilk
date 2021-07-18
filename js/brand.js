@@ -11,36 +11,36 @@ AOS.init({
 });
 
 
-// const brandBtns = document.querySelectorAll('.nav-brand-list li a');
-// console.log(brandBtns);
-// const brandBtnArr = Array.from(brandBtns);
-// console.log(brandBtnArr);
+const brandBtns = document.querySelectorAll('.nav-brand-list li a');
+console.log(brandBtns);
+const brandBtnArr = Array.from(brandBtns);
+console.log(brandBtnArr);
 
-// const cardLists = document.querySelectorAll('.card-list');
-// console.log(cardLists);
-// const cardListArr = Array.from(cardLists);
-// console.log(cardListArr.length);
+const cardLists = document.querySelectorAll('.card-list');
+console.log(cardLists);
+const cardListArr = Array.from(cardLists);
+console.log(cardListArr.length);
 
-// brandBtnArr.forEach((brandBtn) => {
-//     $(brandBtn).click(function (e) {
+brandBtnArr.forEach((brandBtn) => {
+    $(brandBtn).click(function (e) {
 
-//         console.log(e.target);
-//         const targetAttr = e.target.getAttribute('data-brand');
-//         console.log(targetAttr);
-//         const connectedList = document.getElementById(targetAttr);
-//         console.dir(connectedList);
-//         const alreadyOpened = cardListArr.find(item => item.classList.contains('open'));
+        console.log(e.target);
+        const targetAttr = e.target.getAttribute('data-brand');
+        console.log(targetAttr);
+        const connectedList = document.getElementById(targetAttr);
+        console.dir(connectedList);
+        const alreadyOpened = cardListArr.find(item => item.classList.contains('open'));
 
-//         alreadyOpened.classList.remove('open');
-
-
-//         connectedList.classList.add('open');
-//         AOS.refresh();
+        alreadyOpened.classList.remove('open');
 
 
+        connectedList.classList.add('open');
+        AOS.refresh();
 
-//     });
-// });
+
+
+    });
+});
 
 
 

@@ -169,7 +169,7 @@ align-items: center;
         }
 
         .bg2 {
-            background: url(../images/recruit-bg2.jpeg )no-repeat center bottom;
+            background: url(../images/test.jpg )no-repeat center center;
             background-size: cover;
            
             filter: grayscale(0.3);

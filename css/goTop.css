@@ -1,0 +1,19 @@
+.goTop {
+    background: linear-gradient(45deg, skyblue, rgb(24, 78, 144));
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    right: 20px;
+    bottom: -20px;
+    opacity: 0;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.5s;
+  }
+  .goTop.active {
+    bottom: 20px;
+    opacity: 1;
+  }
