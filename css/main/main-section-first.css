@@ -215,3 +215,20 @@ a.round:after {
   border-radius: 100%;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1366px){
+  .items {
+    justify-content: space-around;
+  }
+  .item {
+    width: 240px;
+    height: 390px;
+  }
+  .up-image2{
+    background: url(../../images/section-first-2.jpeg)no-repeat center top;
+    background-size: cover;
+  }
+  .up-image3 {
+    background: url(../../images/section-first-3.jpg)no-repeat center center;
+    background-size: cover;
+}
+}

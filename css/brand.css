@@ -15,8 +15,8 @@ body {
 
 
   header {
-    border-bottom: 1px solid lightgray;
-    background-color: #fff;
+    /* border-bottom: 1px solid lightgray;
+    background-color: #fff; */
     height: 60px;
     text-align: center;
     padding-top: 15px;
@@ -27,7 +27,14 @@ body {
     width: 60px;
   }
 
+hr.headerHr {
+   border: none;
+            height: 5px;
+            width: 900px;
 
+            background: linear-gradient(45deg, skyblue, rgb(24, 78, 144));
+            margin: 0 auto;
+}
   .container {
       max-width: 1300px;
       margin: 0 auto;
