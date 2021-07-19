@@ -280,7 +280,45 @@
     input[id=tab2]:checked~.tabs .intro-items div:nth-of-type(2) img#milkFriend {
       bottom: 50px;
     }
+
     input[id=tab3]:checked~.tabs .intro-items div:last-child h5{
       transform: translateX(-135%) translateY(-50%);
     }
+  }
+  @media screen and (min-width: 768px) and (max-width:1023px){
+    #text {
+      width: 768px;
+      font-size: 35px;
+    }
+    .intro-items div:nth-child(2) h5 {
+      width: 768px;
+      font-size: 40px;
+      
+      left: inherit;
+      top: 0;
+      transform: inherit;
+      text-align: center;
+
+    }
+    input[id=tab2]:checked~.tabs .intro-items div:nth-of-type(2) h5 {
+      top: 150px;
+      font-weight: 400;
+      
+    }
+    .intro-items div:nth-child(2) img#milkFriend{
+      left: 80%;
+    }
+    
+    input[id=tab2]:checked~.tabs .intro-items div:nth-of-type(2) img#milkFriend {
+      bottom: -50px;
+    }
+    .intro-items div:last-child h5{
+      font-size: 6em;
+      
+    }
+    input[id=tab3]:checked~.tabs .intro-items div:last-child h5{
+      transform: translateX(-100%) translateY(-50%);
+    }
+   
+    
   }
