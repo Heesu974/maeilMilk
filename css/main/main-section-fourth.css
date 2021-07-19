@@ -207,7 +207,42 @@ color: #fff;
      .shared-post-items hr.divider {
        margin: 40px 0 40px;
      }
+    
    }
+   @media screen and (min-width: 360px) and (max-width: 767px){
+    .blog-content {
+      flex-direction: column;
+    }
+   .post-item {
+     flex-direction: column;
+   }
+   hr.shared-post-divider {
+    display: block;
+  }
+  
+  .shared-post-items hr.divider {
+    margin: 40px 0 40px;
+  }
+  }
+  @media screen and (min-width: 360px) and (max-width: 767px){
+    
+    .inner {
+      padding: 0 10px;
+    }
+    .blog-header p{
+      font-size: 19px;
+    }
+    .recent-post-items .post-item {
+      width: 100%;
+    }
+    .post-image {
+      width: inherit;
+    }
+    
+    .shared-post-items {
+      width: inherit;
+    }
+  }
 
 
 
