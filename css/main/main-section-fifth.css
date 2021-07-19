@@ -112,6 +112,29 @@
     }
     
   }
-
+  
+  @media screen and (min-width: 360px) and (max-width: 767px){
+    .news-wrapper h1  {
+        font-size: 25px;
+    }
+     .news-card {
+         width: inherit;
+         margin: 0 20px;
+         padding: 10px;
+     } 
+     .news-card a {
+         padding: 5px 10px;
+         font-size: 0.6em;
+         width: 50px;
+     }
+     .news-content span:first-child {
+         display: none;
+     }
+     .news-content span:nth-of-type(2) {
+         display: inline-block;
+         width: 280px;
+         font-size: 0.8em;
+     }
+  }
 
  
