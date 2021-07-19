@@ -5,7 +5,7 @@ footer{
     border-top: 1px solid var(--main-point-color);
   }
   .footer-content {
-      height: 250px;
+   padding: 50px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -16,18 +16,18 @@ footer{
   }
 .content-contact h1 {
     color: var(--main-point-color);
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 600;
     margin-bottom: 10px;
 }
 .content-contact h2 {
-    font-size: 40px;
+    font-size: 2.3em;
     font-weight: 300;
     margin-bottom: 10px;
 }
 
 .content-contact h3 {
-    font-size: 15px;
+    font-size: 0.9em;
 }
 
 
@@ -41,7 +41,7 @@ footer{
   .content-location a,
   .content-location span {
       display: block;
-    
+    font-size: 0.9em;
      
       height: 30px;
       text-align: center;
@@ -154,7 +154,31 @@ footer{
         left: -35%;
       }
   }
-  
+  @media screen and (min-width: 768px) and (max-width:1023px){
+.footer-content {
+    padding: 30px 0;
+    flex-direction: column;
+}
+.content-contact {
+    margin-bottom: 30px;
+}
+.content-contact h1,
+.content-contact h2 {
+    text-align: center;
+}
+.content-sns p {
+    display: none;
+}
+.sns-container {
+    margin: 30px 0 50px 0;
+}
+.sns-container div {
+    margin-right: 20px;
+}
+.sns-container div:last-child {
+    margin-right: 0;
+}
+  }
   
  
   

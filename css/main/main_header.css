@@ -62,7 +62,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    margin: 20px 0;
   
   }
   nav .logo img {
@@ -101,15 +101,36 @@ header {
     overflow: hidden;
   }
   header.active nav {
-    padding-bottom: 20px;
+    padding: 15 0px;
   }
   
   @media screen and (min-width: 1024px) and (max-width: 1366px){
     header {
       width: 1024px;
-      padding: 0 30px;
+      /* padding: 0 30px; */
     }
+    nav {
+      width: 100%;
+    }
+    .logo {
+      margin-left: 30px;
+    }
+    .gnb {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width:1023px){
+  header {
+    width: 768px;
   }
   nav {
     width: 100%;
+    justify-content: space-around;
+  }
+  nav .logo img {
+    width: 60px;
+  }
+  .gnb li a {
+    font-size: 1em;
+  }
   }

@@ -116,3 +116,23 @@ overflow: hidden;
   line-height: 50px;
   cursor: pointer;
 }
+@media screen and (min-width: 1024px) and (max-width: 1366px){
+  .testimonial .arrow_prev {
+    top: 60%;
+    left: 3%;
+  }
+  .testimonial .arrow_next {
+    top: 60%;
+    right: -3%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width:1023px){
+  .testimonial .arrow_prev {
+    top: 61%;
+    left: 3%;
+  }
+  .testimonial .arrow_next {
+    top: 61%;
+    right: -3%;
+  }
+}

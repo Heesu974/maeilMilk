@@ -220,8 +220,8 @@ a.round:after {
     justify-content: space-around;
   }
   .item {
-    width: 240px;
-    height: 390px;
+    width: 220px;
+    height: 340px;
   }
   .up-image2{
     background: url(../../images/section-first-2.jpeg)no-repeat center top;
@@ -231,4 +231,13 @@ a.round:after {
     background: url(../../images/section-first-3.jpg)no-repeat center center;
     background-size: cover;
 }
+}
+@media screen and (min-width: 768px) and (max-width:1023px){
+  .items {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .item {
+    margin-bottom: 50px;
+  }
 }
