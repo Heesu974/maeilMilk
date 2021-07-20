@@ -1,7 +1,7 @@
 /* footer*/
 footer{
 
-    padding: 30px 0;
+    padding: 70px 0;
     border-top: 1px solid var(--main-point-color);
   }
   .footer-content {
@@ -34,7 +34,12 @@ footer{
 
 
   .content-location {
-      flex: 1;
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     
       /* border: 1px solid blue; */
   }
  
@@ -46,6 +51,14 @@ footer{
       height: 30px;
       text-align: center;
       line-height: 30px;
+  }
+  .content-location a {
+      width: 200px;
+      /* border: 1px solid black; */
+  }
+  .content-location span {
+      width: 300px;
+      /* border: 1px solid red; */
   }
   .content-location a:hover {
       color: var(--main-point-color);
@@ -155,6 +168,9 @@ footer{
       }
   }
   @media screen and (min-width: 768px) and (max-width:1023px){
+      footer {
+          padding: 90px 0;
+      }
 .footer-content {
     padding: 30px 0;
     flex-direction: column;
@@ -180,7 +196,7 @@ footer{
 }
   }
   
-  @media screen and (min-width: 360px) and (max-width: 767px){
+  @media screen and (min-width: 320px) and (max-width: 767px){
 
     .footer-content {
         padding: 30px 0;

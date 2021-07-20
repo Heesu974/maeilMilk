@@ -1,4 +1,32 @@
-// Add Common Html Element
+
+
+
+// header
+const navBtns = document.querySelectorAll('.navBtn');
+console.log(navBtns);
+const navBtnArr = Array.from(navBtns);
+console.log(navBtnArr);
+
+let inElemScrollTop = window.scrollY;
+console.log(inElemScrollTop);
+
+const header = document.querySelector('header');
+
+
+navBtnArr.forEach((navBtnItem) => {
+    $(navBtnItem).click(function (e) {
+
+
+        let AlreadyColored = navBtnArr.find(item => item.classList.contains('color'));
+        if (AlreadyColored) {
+            AlreadyColored.classList.remove('color');
+        };
+        console.log(e.target);
+        e.target.classList.add('color');
+
+
+    })
+})
 
 
 
@@ -6,19 +34,39 @@
 
 
 // trigger
-$('.trigger').click(function () {
-    $(this).toggleClass('active');
-    $('.gnb').toggleClass('active')
-})
-$('.gnb a').click(function () {
-    $('.gnb, .trigger').removeClass('active')
-})
+// $('.trigger').click(function () {
+//     $(this).toggleClass('active');
+//     $('.gnb').toggleClass('active')
+// })
+// $('.gnb a').click(function () {
+//     $('.gnb, .trigger').removeClass('active')
+// })
 
 
 
 
 
 //main-intro
+const labels = document.querySelectorAll('.introLabels');
+const labelArr = Array.from(labels);
+console.log(labelArr);
+
+labelArr.forEach((labelBtn) => {
+    $(labelBtn).click(function (e) {
+        let AlreadyColored = labelArr.find(item => item.classList.contains('color'));
+        if (AlreadyColored) {
+            AlreadyColored.classList.remove('color');
+        };
+
+
+        e.target.classList.add('color');
+    })
+})
+
+
+
+
+//main-intro __매일유업
 
 let i = 0, text;
 text = "사소한 불편도 놓치지 않도록 매일 묻고 답하다"
@@ -36,6 +84,7 @@ function typing(e) {
 
 }
 typing();
+
 
 
 
@@ -101,14 +150,14 @@ $('.myslider').slick({
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 767,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 320,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
