@@ -39,7 +39,13 @@
     background-color: #f8f8f8;
   }
   .ranking-content {
-  padding: 100px 0 150px 0;
+  padding: 200px 0 260px 0;
+
+  }
+  .ranking-content h6 {
+    text-align: center;
+    padding-bottom: 30px;
+    box-sizing: border-box;
   }
   .ranking-content h2 {
     font-size: 40px;
@@ -47,6 +53,7 @@
     text-align: center;
     margin-bottom: 100px;
     color: var(--main-point-color);
+  
   }
   .items {
   
@@ -216,11 +223,15 @@ a.round:after {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1366px){
-  .items {
+  .ranking-content {
+    padding: 200px 0 200px 0;
+  
+    }
+  /* .items {
     justify-content: space-around;
   }
   .item {
-    width: 220px;
+    width: 210px;
     height: 340px;
   }
   .up-image2{
@@ -230,12 +241,34 @@ a.round:after {
   .up-image3 {
     background: url(../../images/section-first-3.jpg)no-repeat center center;
     background-size: cover;
+} */
+.items {
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.item {
+  margin: 0 70px 90px 70px;
 }
 }
 @media screen and (min-width: 768px) and (max-width:1023px){
   .items {
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    
+  }
+  .item {
+    margin: 0 25px 50px 25px;
+  }
+  .ranking-content {
+    padding: 200px 0 200px 0;
+  
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+  .items {
+    flex-direction: column;
+    align-items: center;
   }
   .item {
     margin-bottom: 50px;

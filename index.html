@@ -25,28 +25,49 @@
   <div class="container">
     <header>
 
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkBtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label for="" class="logo"> <a href="#"><img src="images/maeil_logo.png" alt=""></a> </label>
+        <ul>
+          <li><a class="navBtn" href="#">HOME</a></li>
+          <li><a class="navBtn" href="#section-first">매일유업</a></li>
+          <li><a class="navBtn" href="#section-second">매일소통</a></li>
+          <li><a class="navBtn" href="#section-fourth">매일제품</a></li>
+          <li><a class="navBtn" href="#section-fifth">매일뉴스</a></li>
+          <li><a class="navBtn" href="consult-service.html">제품상담</a></li>
+          <li><a class="navBtn" href="login.html">로그인</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- <header>
+
 
 
       <nav class="active">
         <div class="logo">
-          <a href="#none"><img src="images/maeil_logo.png" alt=""></a>
+          <a href="#"><img src="images/maeil_logo.png" alt=""></a>
         </div>
         <ul class="gnb">
           <li><a href="#section-first">매일유업</a></li>
           <li><a href="#section-second">매일소통</a></li>
-          <li><a href="#section-third">매일제품</a></li>
-          <li><a href="#section-fourth">매일뉴스</a></li>
+          <li><a href="#section-fourth">매일제품</a></li>
+          <li><a href="#section-fifth">매일뉴스</a></li>
 
           <li><a href="consult-service.html">제품상담</a></li>
           <li><a href="login.html">로그인</a></li>
 
-        </ul>
+        
 
       </nav>
 
 
 
-    </header>
+    </header> -->
+
     <main class="intro">
       <input type="radio" name="tabmenu" id="tab1" checked>
       <input type="radio" name="tabmenu" id="tab2">
@@ -78,9 +99,9 @@
           </div>
         </div>
         <div class="btn">
-          <label id="labelTab1" for="tab1">매일유업</label>
-          <label for="tab2">건강한 매일</label>
-          <label for="tab3">우리의 매일</label>
+          <label class="introLabels color" id="labelTab1" for="tab1">매일유업</label>
+          <label class="introLabels" for="tab2">건강한 매일</label>
+          <label class="introLabels" for="tab3">우리의 매일</label>
         </div>
       </div>
 
@@ -88,6 +109,7 @@
     <section class="ranking" id="section-first">
       <div class="inner">
         <div class="ranking-content">
+          <h6>매일유업</h6>
           <h2>매일의 이야기</h2>
           <div class="items">
             <div class="item">
@@ -171,6 +193,7 @@
     <section class="testimonial" id="section-second">
       <div class="inner">
         <div class="testimonial-content">
+          <h6>매일소통</h6>
           <h2>매일유업과 고객님이 함께하는 <b>"소통"</b></h2>
           <hr>
           <div class="myslider">
@@ -546,7 +569,7 @@
 
     <script src="js/custom.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/goTop.js"></script>
+    <script src="js/scrollActive.js"></script>
 
 </body>
 
