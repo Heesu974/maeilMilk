@@ -126,11 +126,11 @@ overflow: hidden;
     width: 300px;
   }
   .testimonial .arrow_prev {
-    top: 60%;
+    top: 64%;
     left: 3%;
   }
   .testimonial .arrow_next {
-    top: 60%;
+    top: 64%;
     right: -1%;
   }
 }
@@ -147,18 +147,29 @@ overflow: hidden;
 @media screen and (min-width: 320px) and (max-width: 767px){
   
   .testimonial-content h2 {
-    font-size: 28px;
+    font-size: 25px;
     line-height: 35px;
   }
   .testimonial .arrow_prev {
-    top: 63%;
+    top: 64%;
     left: 3%;
   }
   .testimonial .arrow_next {
-    top: 63%;
-    right: -10%;
+    top: 64%;
+    right: -13%;
   }
   .client {
-    width: inherit;
+    width: 220px
+  }
+  p.userName:after {
+    content: '님';
+    position: absolute;
+    right: 25%;
+    bottom: 30%;
+    font-size: 16px;
+    color: #fff;
+  }
+  .comment {
+    font-size: 15px;
   }
 }
