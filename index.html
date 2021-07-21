@@ -16,6 +16,15 @@
 
   <link rel="stylesheet" href="css/styles.css">
 
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script>
+
+    $(document).ready(function () {
+      console.log('hello')
+      $("#footer").load("footer.html");
+
+    });
+  </script>
 
 
 </head>
@@ -132,7 +141,7 @@
           <div class="items">
             <div class="item">
               <div class="up-image up-image1">
-                <!-- <h3>윤리경영</h3> -->
+
               </div>
               <div class="fade-description">'
                 <div class="fade-content">
@@ -497,7 +506,8 @@
         <a href="https://sports.chosun.com/news/ntype.htm?id=202006190100186310012724&servicedate=20200619">자세히</a>
       </div>
     </section>
-    <footer>
+    <div id="footer"></div>
+    <!-- <footer>
       <div class="inner">
         <div class="footer-content">
           <div class="content-contact">
@@ -544,19 +554,6 @@
           </div>
         </div>
 
-
-        <!-- <div class="modal modal5">
-          <div class="value-container">
-            <i class="fas fa-times-circle"></i>
-            <img src="images/recruit-value.png" alt="">
-          </div>
-        </div>
-        <div class="modal modal7">
-          <div class="value-container">
-            <i class="fas fa-times-circle"></i>
-            <img src="images/recruit-value.png" alt="">
-          </div>
-        </div> -->
         <div class="modal modal9">
           <div class="map-container">
             <i class="fas fa-times-circle"></i>
@@ -575,13 +572,14 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <a class="goTop" href="#"><i class="fa fa-angle-up"></i></a>
 
-    <script src="js/jquery-3.6.0.min.js"></script>
+
     <script src="https://kit.fontawesome.com/3dee041feb.js" crossorigin="anonymous"></script>
     <script src="js/slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/colorbox/jquery.colorbox.js"></script>
+
 
 
 

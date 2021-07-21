@@ -1,5 +1,16 @@
+// const footer = document.querySelector('#footer');
 
 
+// function load_home() {
+//     document.getElementById("footer").innerHTML = '<object type="type/html" data="footer.html" ></object>';
+// }
+
+
+// $(document).ready(function () {
+
+//     $("#footer").load("footer.html");
+
+// });
 
 // header
 const navBtns = document.querySelectorAll('.navBtn');
