@@ -6,6 +6,7 @@
     top: 0;
     left: 0;
     z-index: 999;
+    
  }
  header.active {
     background-color: #fff;
@@ -69,10 +70,12 @@ label.logo img {
 header.active .checkBtn {
     color: #000;
 }
-
 #check {
     display: none;
 }
+
+
+
 @media screen and (min-width: 1024px) and (max-width: 1366px){
     /* label.logo {
         font-size: 30px;
@@ -84,24 +87,40 @@ header.active .checkBtn {
     .navBtn {
         font-size: 16px;
     }
+    
 }
 @media screen and (min-width: 768px) and (max-width:1023px){
+    header {
+        width: 100%
+    }
     label.logo img {
         width: 60px;
     }
     .navBtn {
         font-size: 15px;
     }
+  
 }
 @media screen and (min-width: 320px) and (max-width: 767px){
     header {
-        position: fixed;
-        height: 50px;
-        border: 1px solid black;
        
+        height: 50px;
+        min-width: 320px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        
+      
+        /* border: 1px solid black; */
+      
 
        
     }
+   nav{
+       height: 50px;
+       
+       min-width: 320px;
+   }
    
     label.logo {
         line-height: 50px;
@@ -118,12 +137,13 @@ header.active .checkBtn {
         line-height: 50px;
       text-align: center;
         width: 50%;
+     
         
        
 
     }
     .checkBtn i {
-       padding-left: 45%;
+       padding-left: 20%;
     }
     
     ul {
@@ -131,6 +151,7 @@ header.active .checkBtn {
         width: 100%;
         height: 450px;
         background: var(--main-point-color);
+        /* padding-top: 50px; */
        
         /* top: 50px; */
        
