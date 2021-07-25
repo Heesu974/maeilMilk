@@ -1,37 +1,4 @@
 
-
-
-// header
-const navBtns = document.querySelectorAll('.navBtn');
-console.log(navBtns);
-const navBtnArr = Array.from(navBtns);
-console.log(navBtnArr);
-
-
-
-const header = document.querySelector('header');
-
-
-navBtnArr.forEach((navBtnItem) => {
-    $(navBtnItem).click(function (e) {
-
-
-        let AlreadyColored = navBtnArr.find(item => item.classList.contains('color'));
-        if (AlreadyColored) {
-            AlreadyColored.classList.remove('color');
-        };
-        console.log(e.target);
-        e.target.classList.add('color');
-
-
-    })
-})
-
-
-
-
-
-
 // trigger
 // $('.trigger').click(function () {
 //     $(this).toggleClass('active');
@@ -42,13 +9,11 @@ navBtnArr.forEach((navBtnItem) => {
 // })
 
 
-
-
-
 //main-intro
 const labels = document.querySelectorAll('.introLabels');
 const labelArr = Array.from(labels);
 console.log(labelArr);
+
 
 labelArr.forEach((labelBtn) => {
     $(labelBtn).click(function (e) {
@@ -83,6 +48,8 @@ function typing(e) {
 
 }
 typing();
+
+
 
 
 
@@ -194,3 +161,13 @@ for (let i = 0; i < newsCardArr.length; i++) {
 for (let i = 0; i < newsCardArr.length; i++) {
     newsCardArr[i].addEventListener('mouseleave', changeColorHandler2);
 }
+
+
+
+
+
+
+// const urlNot = document.location.href;
+// console.log(urlNot);
+// const url = unescape(document.location.href);
+// console.log(url);

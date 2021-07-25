@@ -6,7 +6,7 @@
     top: 0;
     left: 0;
     z-index: 999;
-    
+
  }
  header.active {
     background-color: #fff;
@@ -14,9 +14,9 @@
 
  }
 
- 
+
  nav {
-   
+
     max-width: 1300px;
     height: 70px;
     /* background: #333; */
@@ -33,9 +33,9 @@ label.logo {
    line-height: 70px;
 }
 label.logo img {
-   
+
     width: 80px;
-    
+
 }
  nav ul {
     float: right;
@@ -50,7 +50,7 @@ label.logo img {
     color: #fff;
     font-size: 17px;
     padding: 7px 13px;
-    
+
 }
 .navBtn.active {
     color: #000;
@@ -61,11 +61,11 @@ label.logo img {
 .checkBtn {
     font-size: 30px;
     float: right;
-    
+
     line-height: 70px;
     cursor: pointer;display: none;
     color: #fff;
-  
+
 }
 header.active .checkBtn {
     color: #000;
@@ -87,81 +87,92 @@ header.active .checkBtn {
     .navBtn {
         font-size: 16px;
     }
-    
+
 }
 @media screen and (min-width: 768px) and (max-width:1023px){
     header {
         width: 100%
     }
+
     label.logo img {
         width: 60px;
     }
     .navBtn {
         font-size: 15px;
     }
-  
+
 }
 @media screen and (min-width: 320px) and (max-width: 767px){
     header {
-       
+
         height: 50px;
         min-width: 320px;
         position: fixed;
         top: 0;
         left: 0;
-        
-      
-        /* border: 1px solid black; */
-      
 
-       
     }
+    header.mobileActive {
+        background: var(--main-point-color);
+    }
+    header.scrollActive {
+        background: #fff;
+
+    }
+
    nav{
        height: 50px;
-       
+
        min-width: 320px;
    }
-   
+   nav ul {
+       margin-right: 0;
+   }
+
     label.logo {
         line-height: 50px;
         height: 50px;
     }
     label.logo img {
         width: 50px;
-        
+
     }
     .checkBtn{
         display: block;
         /* margin-right: 5%; */
         font-size: 25px;
         line-height: 50px;
-      text-align: center;
-        width: 50%;
-     
-        
-       
 
+       padding-right: 20px;
+
+
+
+
+    }
+    .checkBtn.scrollActive {
+        color:var(--main-point-color);
     }
     .checkBtn i {
        padding-left: 20%;
     }
-    
+
+
     ul {
         position: relative;
         width: 100%;
         height: 450px;
         background: var(--main-point-color);
         /* padding-top: 50px; */
-       
+
         /* top: 50px; */
-       
-        
-        
+
+
+
         left: -100%;
         text-align: center;
-        z-index: 999999999;
+        /* z-index: 999999999; */
         transition:  all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-       
+
     }
     nav ul li {
         display: block;
@@ -171,14 +182,23 @@ header.active .checkBtn {
     .navBtn {
         font-size: 16px;
     }
-   .navBtn:hover {
+   /* .navBtn:hover {
         background: none;
+        color: #fff;
+    } */
+
+    /* #check:checked ~ ul {
+        left: 0;
+        top: 0;
+
+    } */
+    ul.mobileActive {
+        left: 0;
+        top: 0;
+    }
+    .navBtn.mobileActive{
         color: #fff;
     }
 
-    #check:checked ~ ul {
-        left: 0;
-   
-    }
-   
+
 }

@@ -1,5 +1,5 @@
 /* SECTION FOURTH */
-  
+
 #section-fourth {
   padding: 160px 0 160px 0;
 }
@@ -7,17 +7,17 @@
     padding: 50px 0;
     display: flex;
    }
-   
-  
+
+
    .post-item {
      /* border: 1px solid black; */
      /* padding: 20px 0; */
      box-sizing: border-box;
-    
+
      border-radius: 30px 0 30px 0;
      /* width: 100%; */
 
-     
+
    }
    .recent-post-items .post-item {
     width: 95%;
@@ -35,10 +35,10 @@
    .shared-post-items h6 {
      text-transform: uppercase;
      font-size: 16px;
-    
+
      margin-bottom: 30px;
    }
-   
+
    .blog-header h2
      {
      text-transform: uppercase;
@@ -49,18 +49,18 @@
    }
    .blog-header p {
      font-size: 20px;
-    
+
      font-weight: 300;
      line-height: 1.2em;
    }
-   
+
    .post-content {
      display: flex;
      /* justify-content: space-between; */
-   
+
    }
-   
-   
+
+
    hr.divider {
    margin: 50px 0 0 0;
    border: 0;
@@ -72,42 +72,42 @@ hr.shared-post-divider {
 }
    .post-content hr.divider {
      margin: 40px 0;
-    
+
    }
-   
+
    .recent-post-items h6,
    .shared-post-items h6  {
      color: #333;
    }
-   
+
    .shared-post-items {width: 360px;}
    .shared-post-items hr.divider {
     margin: 20px 0 30px 0;
    }
    .post-item {
      display: flex;
-     
-     
-     
-   
+
+
+
+
    }
    a.brandLink {
     display: inline-block;
     position: relative;
    width: 100%;
-    
+
     /* border: 1px solid red;
     box-sizing: border-box; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
   }
 /* a.brandLink:hover .post-item {
  background-color: var(--main-point-color);
  color: #fff;
 } */
- 
+
 .post-item:hover {
   background-color: var(--main-point-color);
   color: #fff;
@@ -121,16 +121,16 @@ color: #fff;
 
  }
    .post-image {
-     
+
      border-radius: 30px 0 30px 0;
      overflow: hidden;
-     
+
      width: 360px;
     height: 230px;
     /* border: 1px solid pink;
     box-sizing: border-box; */
-  
-    
+
+
    }
    .post-image img {
      width: 100%;
@@ -144,9 +144,9 @@ color: #fff;
    height: 100%;
      /* border: 1px solid brown;
      box-sizing: border-box; */
-     
-     
-   
+
+
+
    }
    .post-description h3 {
    font-size: 24px;
@@ -158,9 +158,9 @@ color: #fff;
      font-size: 18px;
      line-height: 1.6em;
      font-weight: 100;
-   
-     
-     
+
+
+
    }
    .post-description p span {
      font-size: 14px;
@@ -173,11 +173,11 @@ color: #fff;
    }
    .recent-post-items  hr.divider {
      width: 96%;
-     
+
    }
    .shared-post-items .post-item {
      flex-direction: column;
-     
+
    }
    .shared-post-items .post-description h3 {
      margin: 20px 0;
@@ -230,11 +230,11 @@ color: #fff;
      .shared-post-items hr.divider {
        margin: 40px 0 40px;
      }
-    
+
    }
    @media screen and (min-width: 320px) and (max-width: 767px){
      #section-fourth {
-       padding: 150px 0 150px 0;
+       padding: 100px 0 150px 0;
      }
     .blog-content {
       flex-direction: column;
@@ -252,7 +252,7 @@ color: #fff;
    hr.shared-post-divider {
     display: block;
   }
-  
+
   .shared-post-items hr.divider {
     margin: 40px 0 40px;
   }
@@ -268,24 +268,12 @@ color: #fff;
   .post-image {
     width: inherit;
   }
-  
+
   .shared-post-items {
     width: inherit;
   }
   }
   /* @media screen and (min-width: 320px) and (max-width: 767px){
-    
-    
+
+
   } */
-
-
-
-
-
-
-
-
-
-
-
-

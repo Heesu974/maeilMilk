@@ -2,7 +2,7 @@
 
 @import "variables.css";
 @import "modal.css";
-@import "goTop.css";
+@import "goTopBtn.css";
 
 
 
@@ -73,6 +73,32 @@ hr.headerHr {
       /* border: 1px solid green; */
       display: block;
       width: 100%;
+      position: relative;
+      color: rgba(0, 0, 0, 0.6)
+      /* border: 1px solid black; */
+  }
+  .nav-brand-list a:after {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 50%;
+     /* transform: translateX(-50%); */
+     width: 0;
+     height: 100%;
+     border-bottom: 2px solid var(--main-point-color);
+     
+     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+
+
+  }
+  .nav-brand-list a:hover::after {
+     width: 80%;
+     left: 10%;
+  }
+  .nav-brand-list a.color {
+     color: var(--main-point-color);
+     font-weight: bold;
   }
   .card-list {
       /* border: 1px solid blue; */
@@ -460,3 +486,4 @@ hr.headerHr {
 .card-list.open{
     display: block;
 }
+

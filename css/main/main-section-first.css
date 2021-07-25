@@ -1,6 +1,6 @@
 /* SECTION FIRST*/
 .about-content {
-  
+
     display: flex;
     padding: 90px 0;
   }
@@ -16,7 +16,7 @@
      font-size: 30px;
      margin-bottom: 30px;
      text-transform: capitalize;
-    
+
    }
    .description p {
      font-size: 16px;
@@ -28,10 +28,10 @@
    }
    .photo {
      flex: 2;}
-     
+
    .photo img {
     width: 100%;
-    
+
     border-radius: 40% 60% 65% 30% / 40% 45% 55% 60%;
   }
   /* ranking SECTION */
@@ -53,13 +53,13 @@
     text-align: center;
     margin-bottom: 100px;
     color: var(--main-point-color);
-  
+
   }
   .items {
-  
+
   display: flex;
   justify-content: space-between;
-  
+
   }
   .item {
     background-color: #fff;
@@ -72,20 +72,20 @@
     display: flex;
     justify-content: center;
     filter: grayscale(0.3);
-    
+
   }
   .up-image {
-    
+
     width: 390px;
     /* height: 285px; */
     height: 400px;
     transition:  all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     /* transition-delay: 0.2s; */
     /* filter: grayscale(0.4); */
-    
+
     /* border-radius: 가 왜 사라졌가?  해당 radius를 갖고 있는 요소에 히든을 적용시킨다.  */
   }
-  
+
   .up-image1 {
     background: url(../../images/section-first-1.jpg)no-repeat center bottom;
     background-size: cover;
@@ -101,9 +101,9 @@
   .up-image4 {
     background: url(../../images/section-first-4.jpg)no-repeat center bottom;
     background-size: cover;
-    
+
   }
- 
+
   .down-description {
   padding: 25px;
   padding-top: 40px;
@@ -120,10 +120,10 @@
   .up-image h3 {
     font-size: 24px;
     padding-top: 50px;
-   
-    
+
+
   }
-  
+
   .item.active .up-image {
       filter: grayscale(1);
   }
@@ -140,26 +140,26 @@
     display: none;
     justify-content: center;
     align-items: center;
-   
+
   background-color: var(--main-point-color);
-  
-    
+
+
   }
   .item:hover .fade-description{
     display: flex;
   }
   .fade-content {
-   
-    
+
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
   }
   .fade-content h3 {
     font-size: 30px;
-    
+
     color: #fff;
     margin-bottom: 30px;
   }
@@ -185,7 +185,7 @@ position: relative;
     content: '';
     width: 100%;
     height: 100%;
-    
+
   }
 
 a.button:before {
@@ -207,9 +207,9 @@ a.button:after {
 a.button:hover:after {
   border-top: 1px solid #fff;
   box-sizing: border-box;
-  
 
- 
+
+
   transform: rotate(270deg);
   transition: transform 0.4s linear 0s;
 }
@@ -225,7 +225,7 @@ a.round:after {
 @media screen and (min-width: 1024px) and (max-width: 1366px){
   .ranking-content {
     padding: 200px 0 200px 0;
-  
+
     }
   /* .items {
     justify-content: space-around;
@@ -245,7 +245,7 @@ a.round:after {
 .items {
   flex-wrap: wrap;
   justify-content: center;
-  
+
 }
 .item {
   margin: 0 70px 90px 70px;
@@ -255,14 +255,14 @@ a.round:after {
   .items {
     flex-wrap: wrap;
     justify-content: center;
-    
+
   }
   .item {
     margin: 0 25px 50px 25px;
   }
   .ranking-content {
     padding: 200px 0 200px 0;
-  
+
     }
 }
 @media screen and (min-width: 320px) and (max-width: 767px){
@@ -276,7 +276,7 @@ a.round:after {
     height: 350px;
   }
   .ranking-content {
-    padding: 200px 0 150px 0;
-  
+    padding: 100px 0 150px 0;
+
     }
 }

@@ -4,7 +4,8 @@
     background-color: var(--main-point-color);
     color: #fff;
     position: relative;
-   
+
+
   }
   .testimonial-content {
   text-align: center;
@@ -25,7 +26,7 @@
   .testimonial-content hr {
     border: none;
     border-bottom: 4px solid #fff;
-    
+
     width: 120px;
     margin: 0px auto 70px;
   }
@@ -34,7 +35,7 @@
   .client {
     height: 250px;
     width: 350px;
-   
+
     box-sizing: border-box;
     margin: 0 auto;
     display: flex;
@@ -52,31 +53,31 @@ overflow: hidden;
 
 
   }
-  
+
   div.sub {
-  
+
      width: 60px;
-    
+
      margin-left: 10px;
      border-radius: 10px 0 10px 0;
      overflow: hidden;
      cursor: pointer;
-     
-    
+
+
 
   }
   div.big img,
   div.sub img {
     width: 100%;
     height: 100%;
-  
-  
+
+
   }
-   
+
   p.userName {
     display: block;
- 
-    
+
+
     padding: 30px 0 20px 0;
     font-size: 20px;
     position: relative;
@@ -100,10 +101,10 @@ overflow: hidden;
 .testimonial .arrow_prev {
   position: absolute;
   width: 100px;
-  
+
   top: 50%;
   left: 5%;
- 
+
 }
 .testimonial .arrow_next {
   position: absolute;
@@ -145,9 +146,12 @@ overflow: hidden;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px){
-  
+  .testimonial {
+    overflow: hidden;
+    padding: 100px 0 100px 0;
+  }
   .testimonial-content h2 {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 35px;
   }
   .testimonial .arrow_prev {
@@ -161,12 +165,15 @@ overflow: hidden;
   .client {
     width: 220px
   }
+  p.userName {
+    font-size: 18px;
+  }
   p.userName:after {
     content: '님';
     position: absolute;
     right: 25%;
     bottom: 30%;
-    font-size: 16px;
+    font-size: 15px;
     color: #fff;
   }
   .comment {
