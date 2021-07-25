@@ -15,7 +15,7 @@
 @import "footer.css";
 
 @import "modal.css";
-@import "goTop.css";
+@import "goTopBtn.css";
 
 
 /* common CSS */
@@ -40,7 +40,9 @@ body {
  
 }
 
-
+.color {
+  color: red;
+}
 
    
  

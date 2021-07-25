@@ -1,4 +1,4 @@
-.goTop {
+.goTopBtn {
     background: linear-gradient(45deg, skyblue, rgb(24, 78, 144));
     position: fixed;
     width: 50px;
@@ -13,32 +13,33 @@
     line-height: 50px;
     transition: 0.5s;
   }
-  .goTop.active {
+  .goTopBtn.active {
     bottom: 20px;
     opacity: 1;
   }
+  
   @media screen and (min-width: 1024px) and (max-width: 1366px){
-    .goTop {
+    .goTopBtn{
       right: 50px;
     }
-    .goTop.active {
+    .goTopBtn.active {
       bottom: 20px;
       right: 50px;
       opacity: 1;
     }
   }
   @media screen and (min-width: 768px) and (max-width:1023px){
-    .goTop {
+    .goTopBtn {
       right: 40px;
     }
   }
   @media screen and (min-width: 320px) and (max-width: 767px){
-    .goTop {
+    .goTopBtn {
      
       width: 35px;
       height: 35px;
     
-      right: 50px;
+      
      
      
       color: #fff;

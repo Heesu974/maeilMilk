@@ -16,15 +16,8 @@
 
   <link rel="stylesheet" href="css/styles.css">
 
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script>
 
-    $(document).ready(function () {
-      console.log('hello')
-      $("#footer").load("footer.html");
 
-    });
-  </script>
 
 
 </head>
@@ -42,7 +35,7 @@
         <label for="" class="logo checkBtn-header"> <a href="#"><img src="images/maeil_logo.png" alt=""></a> </label>
         <ul>
 
-          <li><a class="navBtn" href="#">HOME</a></li>
+          <li><a class="navBtn" href="#section-intro">HOME</a></li>
           <li><a class="navBtn" href="#section-first">매일유업</a></li>
           <li><a class="navBtn" href="#section-second">매일소통</a></li>
           <li><a class="navBtn" href="#section-fourth">매일제품</a></li>
@@ -53,49 +46,8 @@
       </nav>
     </header>
 
-    <!-- <div class="mobile-header">
-      <input type="checkbox" id="check">
-      <label for="check" class="checkBtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <label for="" class="logo"> <a href="#"><img src="images/maeil_logo.png" alt=""></a> </label>
-        <ul>
-          <li><a class="navBtn" href="#">HOME</a></li>
-          <li><a class="navBtn" href="#section-first">매일유업</a></li>
-          <li><a class="navBtn" href="#section-second">매일소통</a></li>
-          <li><a class="navBtn" href="#section-fourth">매일제품</a></li>
-          <li><a class="navBtn" href="#section-fifth">매일뉴스</a></li>
-          <li><a class="navBtn" href="consult-service.html">제품상담</a></li>
-          <li><a class="navBtn" href="login.html">로그인</a></li>
-        </ul>
-    </div> -->
 
-    <!-- <header>
-
-
-
-      <nav class="active">
-        <div class="logo">
-          <a href="#"><img src="images/maeil_logo.png" alt=""></a>
-        </div>
-        <ul class="gnb">
-          <li><a href="#section-first">매일유업</a></li>
-          <li><a href="#section-second">매일소통</a></li>
-          <li><a href="#section-fourth">매일제품</a></li>
-          <li><a href="#section-fifth">매일뉴스</a></li>
-
-          <li><a href="consult-service.html">제품상담</a></li>
-          <li><a href="login.html">로그인</a></li>
-
-        
-
-      </nav>
-
-
-
-    </header> -->
-
-    <main class="intro">
+    <section class="intro" id="section-intro">
       <input type="radio" name="tabmenu" id="tab1" checked>
       <input type="radio" name="tabmenu" id="tab2">
       <input type="radio" name="tabmenu" id="tab3">
@@ -132,7 +84,7 @@
         </div>
       </div>
 
-    </main>
+    </section>
     <section class="ranking" id="section-first">
       <div class="inner">
         <div class="ranking-content">
@@ -332,6 +284,7 @@
           </div>
         </div>
       </div>
+
     </section>
     <section class="callaction" id="section-third">
 
@@ -369,7 +322,7 @@
                   <h3>매일 우유</h3>
                   <p>소비자의 건강한 하루를 위해 항상 새로운 생각으로 <br> 끊임 없이 연구하는
                     매일유업의 대표 우유 브랜드
-                    <a class="brandLink" href="brand.html">
+                    <a class="brandLink" href="brand.html?value=milk=milkBtn">
                       <span>살펴보기</span>
                     </a>
                   </p>
@@ -390,7 +343,7 @@
                 <div class="post-description">
                   <h3>매일 발효유</h3>
                   <p>건강한 식문화를 선도하는 프로바이오틱 발효유 브랜드
-                    <a class="brandLink" href="brand.html">
+                    <a class="brandLink" href="brand.html?value=fermented=fermentedBtn">
                       <span>살펴보기</span>
                     </a>
                   </p>
@@ -412,7 +365,7 @@
                   <h3>매일 치즈</h3>
                   <p>좋은 재료, 엄격한 공정을 통해 완성됩니다. <br>
                     축적된 노하우와 좋은 원료로 다양한 제품을 생산하는 치즈전문브랜드
-                    <a class="brandLink" href="brand.html">
+                    <a class="brandLink" href="brand.html?value=cheese=cheeseBtn">
                       <span class="look">살펴보기</span>
                     </a>
                   </p>
@@ -434,7 +387,7 @@
               <div class="post-description">
                 <h3>매일 유아식</h3>
                 <p>모유를 기준으로 한 절대원칙으로 아기에게 딱 맞는 제품을 만드는 유아식 브랜드
-                  <a class="brandLink" href="brand.html">
+                  <a class="brandLink" href="brand.html?value=baby=babyBtn">
                     <span>살펴보기</span>
                   </a>
                 </p>
@@ -453,7 +406,7 @@
               <div class="post-description">
                 <h3>매일 건강식</h3>
                 <p>'과학에 근거한 고객맞춤형 평생건강관리'를 실현하고자 합니다.
-                  <a href="brand.html" class="brandLink">
+                  <a href="brand.html?value=health=healthBtn" class="brandLink">
                     <span>살펴보기</span>
                   </a>
                 </p>
@@ -507,75 +460,10 @@
       </div>
     </section>
     <div id="footer"></div>
-    <!-- <footer>
-      <div class="inner">
-        <div class="footer-content">
-          <div class="content-contact">
-            <h1>Contact US</h1>
-            <h2>1588-1539</h2>
-            <h3>새로운 식문화를 창조하는 글로벌리더 매일유업</h3>
-          </div>
-          <div class="content-location">
-            <a href="recruit-policy-1.html">개인정보처리방침</a>
-            <a href="recruit-policy-2.html">이메일무단수집거부</a>
-            <a class="modalBtn" data-alt="modal9" href="#none">찾아오시는 길</a>
-            <span>&copy;Maeil Dairies Co, Ltd All rights reserved</span>
-          </div>
-          <div class="content-sns">
-            <p>SNS</p>
-            <div class="sns-container">
-              <div class="fb">
-                <a href="https://www.facebook.com/maeili">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </div>
-              <div class="twitter">
-                <a href="https://twitter.com/freshmaeil">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </div>
-              <div class="kakao">
-                <a href="https://story.kakao.com/ch/maeil">
-                  <i class="fas fa-quote-right"></i>
-                </a>
-              </div>
-              <div class="youtube">
-                <a href="https://www.youtube.com/user/maeili2mo">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </div>
-              <div class="naver">
-                <a href="https://post.naver.com/my.nhn?memberNo=10582084">
-                  <i class="fab fa-blogger-b"></i>
-                </a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="modal modal9">
-          <div class="map-container">
-            <i class="fas fa-times-circle"></i>
-            <h1>찾아오시는 길</h1>
-            <div id="map"><iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12648.657938525486!2d126.9790562!3d37.5747443!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xacaad5cec87ea944!2z66ek7J287Jyg7JeFKOyjvCk!5e0!3m2!1sko!2skr!4v1626313655212!5m2!1sko!2skr"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-            <div id="map-content">
-              <h3> 본사 주소: 서울특별시 종로구 중학동 종로1길 50 더케이트윈타워</h3>
-              <p><i class="fas fa-bus"></i> <b>지선</b> 7016 1711</p>
-              <p><i class="fas fa-bus"></i> <b>광역</b> 3000</p>
-              <p><i class="fas fa-bus"></i> <b>간선</b> 109 502 708 261 702B</p>
-              <p><i class="fas fa-subway"></i> <b>3호선</b> 경복궁역</p>
-              <p><i class="fas fa-subway"></i> <b>5호선</b> 광화문역</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer> -->
-    <a class="goTop" href="#"><i class="fa fa-angle-up"></i></a>
+    <a class="goTopBtn" href="#"><i class="fa fa-angle-up"></i></a>
 
 
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/3dee041feb.js" crossorigin="anonymous"></script>
     <script src="js/slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/colorbox/jquery.colorbox.js"></script>
@@ -585,7 +473,9 @@
 
     <script src="js/custom.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/scrollActive.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/goTopBtn.js"></script>
+    <script src="js/load-html.js"></script>
 
 </body>
 

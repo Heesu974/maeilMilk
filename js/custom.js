@@ -1,47 +1,3 @@
-// const footer = document.querySelector('#footer');
-
-
-// function load_home() {
-//     document.getElementById("footer").innerHTML = '<object type="type/html" data="footer.html" ></object>';
-// }
-
-
-// $(document).ready(function () {
-
-//     $("#footer").load("footer.html");
-
-// });
-
-// header
-const navBtns = document.querySelectorAll('.navBtn');
-console.log(navBtns);
-const navBtnArr = Array.from(navBtns);
-console.log(navBtnArr);
-
-
-
-const header = document.querySelector('header');
-
-
-navBtnArr.forEach((navBtnItem) => {
-    $(navBtnItem).click(function (e) {
-
-
-        let AlreadyColored = navBtnArr.find(item => item.classList.contains('color'));
-        if (AlreadyColored) {
-            AlreadyColored.classList.remove('color');
-        };
-        console.log(e.target);
-        e.target.classList.add('color');
-
-
-    })
-})
-
-
-
-
-
 
 // trigger
 // $('.trigger').click(function () {
@@ -53,13 +9,11 @@ navBtnArr.forEach((navBtnItem) => {
 // })
 
 
-
-
-
 //main-intro 
 const labels = document.querySelectorAll('.introLabels');
 const labelArr = Array.from(labels);
 console.log(labelArr);
+
 
 labelArr.forEach((labelBtn) => {
     $(labelBtn).click(function (e) {
@@ -94,6 +48,8 @@ function typing(e) {
 
 }
 typing();
+
+
 
 
 
@@ -208,5 +164,12 @@ for (let i = 0; i < newsCardArr.length; i++) {
 
 
 
+
+
+
+// const urlNot = document.location.href;
+// console.log(urlNot);
+// const url = unescape(document.location.href);
+// console.log(url);
 
 

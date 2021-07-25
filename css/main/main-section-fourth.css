@@ -234,7 +234,7 @@ color: #fff;
    }
    @media screen and (min-width: 320px) and (max-width: 767px){
      #section-fourth {
-       padding: 150px 0 150px 0;
+       padding: 100px 0 150px 0;
      }
     .blog-content {
       flex-direction: column;
