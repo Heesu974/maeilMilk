@@ -1,40 +1,18 @@
+@import "sub-header.css";
+
 body {
     /* font-family: 'Noto Sans KR', sans-serif; */
     line-height: 1.5em;
     /* background-color: #e2dfdf; */
-
+overflow-y: hidden;
   }
 
 
-  header {
-    /* border-bottom: 1px solid lightgray;
-    background-color: #fff; */
-    height: 60px;
-    text-align: center;
-    padding-top: 15px;
-    box-sizing: border-box;
-  }
 
-  header a img {
-    width: 60px;
-  }
-hr.headerHr {
-  
-    border: none;
-    height: 5px;
-    width: 1200px;
-
-    background: linear-gradient(45deg, skyblue, rgb(24, 78, 144));
-    position: absolute;
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-
-}
   section {
 
     height: calc(100vh - 60px);
-    position: relative;
+    /* position: relative; */
   }
 
 
@@ -78,7 +56,12 @@ hr.headerHr {
     background-color: #fff;
     position: relative;
   }
-
+span.or-text {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+}
   .btn:nth-of-type(1) .fas,
   .btn:nth-of-type(2) .fas,
   .btn:nth-of-type(4) .fab {
@@ -114,10 +97,12 @@ hr.headerHr {
   .btn:nth-of-type(4) {
     background-color: #3b5998;
     position: relative;
+    margin-bottom: 10px;
   }
 
   .login-footer p {
     text-align: center;
+    padding-top: 10px;
   }
 
   .login-footer p a {
@@ -126,4 +111,13 @@ hr.headerHr {
 
   .login-footer p a:hover {
     text-decoration: underline;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px){
+    .login {
+      width: 320px;
+      padding: 0 20px;
+    }
+    .login-type h1 {
+      font-size: 30px;
+    }
   }

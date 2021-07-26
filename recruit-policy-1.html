@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/maeil_favicon.ico">
     <title>개인정보취급방침</title>
+
+    <link rel="stylesheet" href="css/sub-header.css">
     <style>
         body {
             width: 100%;
@@ -14,25 +16,7 @@
 
         }
 
-        header {
 
-            height: 60px;
-            text-align: center;
-            padding-top: 15px;
-            box-sizing: border-box;
-        }
-
-        header a img {
-            width: 60px;
-        }
-
-        hr {
-            border: none;
-            height: 5px;
-            width: 900px;
-
-            background: linear-gradient(45deg, skyblue, rgb(24, 78, 144));
-        }
 
         .container {
             padding: 70px 0;
@@ -40,14 +24,28 @@
 
             margin: 0 auto;
         }
+
+        @media screen and (min-width: 768px) and (max-width:1023px) {
+            .container {
+                width: 700px;
+                padding: 0 40px;
+            }
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            .container {
+                width: 320px;
+                padding: 0 30px;
+                box-sizing: border-box;
+            }
+        }
     </style>
+
 </head>
 
 <body>
-    <header>
-        <a href="index.html"><img src="images/maeil_logo.png" alt=""></a>
-    </header>
-    <hr>
+    <div id="sub-header"></div>
+
     <div class="container">
         개인정보처리방침 <br><br>
         개인정보 처리방침<br><br>
@@ -141,6 +139,7 @@
         개인정보처리방침 시행일자 : 2016년 01월 01일<br><br>
         개인정보처리방침 최종변경일자 : 2016년 01월 01일<br><br>
     </div>
+    <script src="js/load-sub-header-html.js"></script>
 </body>
 
 </html>

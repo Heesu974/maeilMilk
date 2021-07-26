@@ -1,5 +1,7 @@
 @import "variables.css";
+@import "reset.css";
 
+@import "modal.css";
 @import "goTopBtn.css";
 
 
@@ -34,7 +36,7 @@ align-items: center; */
         }
 
         .container>div {
-            height: 210px;
+        
             background-size: cover;
             background-attachment: fixed;
       
@@ -60,7 +62,7 @@ align-items: center; */
         .container>div:nth-child(1) {
             grid-column: 1/3;
             grid-row: 1/3;
-            height: 430px;
+           
             flex-direction: column;
 
         }
@@ -132,7 +134,7 @@ align-items: center; */
         .container>div:nth-child(4) {
             grid-column: 3/5;
             grid-row: 2/4;
-            height: 430px;
+           
             width: 500px;
         }
        
@@ -245,115 +247,7 @@ align-items: center; */
             margin-left: 20px;
         }
 
-        #modalBtn {
-            display: block;
-            
-            width: 100%;
-            height: 100%;
-        }
-
-        .modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-
-            background: rgba(0, 0, 0, 0.8);
-            z-index: 999;
-
-            justify-content: center;
-            align-items: center;
-            display: none;
-
-
-        }
-
-        .modal.open {
-            display: flex;
-        }
-.value-container {
-    width: 1300px;
-    height: 700px;
-overflow: scroll;
-position: relative;
-}
-.value-container i,
-.map-container i.fa-times-circle {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 40px;
-    padding: 10px;
-    color: var(--main-point-color);
-    cursor: pointer;
-}
-.value-container img {
-    width: 100%;
-
-}
-        .map-container {
-            width: 500px;
-            height: 700px;
-            
-
-            margin: 0 auto;
-            background-color: #fefefe;
-            position: relative;
-
-        }
-
-        .map-container h1 {
-            font-size: 30px;
-          color: var(--main-point-color);
-          padding: 30px 0 30px 30px;
-
-        }
-
-        #map {
-            height: 50%;
-            width: 100%;
-        }
-        #map iframe {
-            width: 100%;
-            height: 100%;
-        }
-        #map-content {
-            
-            padding: 30px;
-        }
-        #map-content h3 {
-            margin-bottom: 15px;
-        }
-        #map-content p {
-            margin-bottom: 15px;
-        }
-        #map-content p:nth-of-type(1) i,
-        #map-content p:nth-of-type(1) b{
-            color: green;
-
-        }
-        #map-content p:nth-of-type(2) i,
-        #map-content p:nth-of-type(2) b{
-            color: tomato;
-
-        }
-        #map-content p:nth-of-type(3) i,
-        #map-content p:nth-of-type(3) b{
-            color: royalblue;
-
-        }
-        #map-content p:nth-of-type(4) i,
-        #map-content p:nth-of-type(4) b{
-            color: peru;
-
-        }
-        #map-content p:nth-of-type(5) i,
-        #map-content p:nth-of-type(5) b{
-            color: purple;
-            opacity: 0.8;
-
-        }
+       
         @media screen and (min-width: 1024px) and (max-width: 1366px){
            .contaienr {
                height: 100%;
@@ -433,11 +327,13 @@ position: relative;
             .container>div {
                 height: 100px;
                 width: 100%;
+                
                
             }
             .container>div:nth-child(1) {
                 grid-column: 1;
                 grid-row: 2/3;
+                height: 430px;
               
                 
     
@@ -482,6 +378,7 @@ position: relative;
                 grid-column: 1;
                 grid-row: 3/4;
                 width: auto;
+                height: 430px;
               
                 
     
@@ -524,14 +421,14 @@ position: relative;
             }
             .container>div:nth-child(6) {
                 grid-column: 1;
-                grid-row: 6/8;
+                grid-row: 6/7;
               
                 
     
             }
             .container>div:nth-child(7) {
                 grid-column: 1;
-                grid-row: 8/9;
+                grid-row: 7/8;
               
                 
     
@@ -539,7 +436,7 @@ position: relative;
             .container>div:nth-child(7) a {
                 font-size: 14px;
             }
-            .container:div:nth-child(7) h3 {
+            .container>div:nth-child(7) h3 {
                 margin-top: 0;
                 font-size: 14px;
             }
@@ -560,11 +457,11 @@ position: relative;
             }
             
             .bg1,
-            .bg {
+            .bg2 {
                 background: url(../images/test.jpg )no-repeat center center;
                 background-size: cover;
                
-                filter: grayscale(0.3);
+                filter: grayscale(0.5);
     
             }
     

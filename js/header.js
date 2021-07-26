@@ -45,6 +45,7 @@ if (window.screen.width > 767) {
 
     }))
     function Jaebaldaela(e) {
+
         // scrollPos = '';
         // let ahahahah = navBtnArr.filter((item) => item.classList.contains('color'));
         // for (let i = 0; i < ahahahah.length; i++) {
@@ -144,7 +145,7 @@ console.log(offset4);
 //스크롤할 떄 navBtn 변하게 하는 함수
 function ScrollColorHandler(e) {
 
-    scrollPos = docElem.scrollTop;
+    scrollPos = docElem.scrollTop + 500;
     let jaebal = navBtnArr.find(item => item.classList.contains('color'));
     console.log(jaebal)
 
