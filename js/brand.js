@@ -108,4 +108,3 @@ window.addEventListener('load', loadTargetPage);
 // let idx = param[1];
 // $("ul li").eq(idx).css("display", "block");
 
-

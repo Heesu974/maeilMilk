@@ -20,38 +20,38 @@ function initMap() {
     });
 }
 
-const modalBtns = document.querySelectorAll('.modalBtn');
-console.log(modalBtns);
-const modalBtnArr = Array.from(modalBtns);
-console.log(modalBtnArr);
-const modals = document.querySelectorAll('.modal');
-console.log(modals);
-const modalArr = Array.from(modals);
-const closeBtns = document.querySelectorAll('.fas');
-const closeBtnArr = Array.from(closeBtns);
+// const modalBtns = document.querySelectorAll('.modalBtn');
+// console.log(modalBtns);
+// const modalBtnArr = Array.from(modalBtns);
+// console.log(modalBtnArr);
+// const modals = document.querySelectorAll('.modal');
+// console.log(modals);
+// const modalArr = Array.from(modals);
+// const closeBtns = document.querySelectorAll('.fas');
+// const closeBtnArr = Array.from(closeBtns);
 
-modalBtnArr.forEach((modalBtn) => {
-    $(modalBtn).click(function (e) {
-        e.preventDefault();
-        console.log(e.target);
-        let targetAttr = e.target.getAttribute('data-alt');
-        console.log(targetAttr);
+// modalBtnArr.forEach((modalBtn) => {
+//     $(modalBtn).click(function (e) {
+//         e.preventDefault();
+//         console.log(e.target);
+//         let targetAttr = e.target.getAttribute('data-alt');
+//         console.log(targetAttr);
 
-        const modalTarget = modalArr.find(item => item.classList.contains(targetAttr));
-        console.log(modalTarget);
-        modalTarget.classList.add('open');
-    });
-});
-modalArr.forEach((modal) => {
-    $(modal).click(function (e) {
-        console.log(e.target);
-        e.target.classList.remove('open');
-    });
-});
-closeBtnArr.forEach((closeBtn) => {
-    $(closeBtn).click(function () {
-        const findTargetModal = modalArr.find(item => item.classList.contains('open'));
-        console.log(findTargetModal);
-        findTargetModal.classList.remove('open');
-    })
-})
+//         const modalTarget = modalArr.find(item => item.classList.contains(targetAttr));
+//         console.log(modalTarget);
+//         modalTarget.classList.add('open');
+//     });
+// });
+// modalArr.forEach((modal) => {
+//     $(modal).click(function (e) {
+//         console.log(e.target);
+//         e.target.classList.remove('open');
+//     });
+// });
+// closeBtnArr.forEach((closeBtn) => {
+//     $(closeBtn).click(function () {
+//         const findTargetModal = modalArr.find(item => item.classList.contains('open'));
+//         console.log(findTargetModal);
+//         findTargetModal.classList.remove('open');
+//     })
+// })

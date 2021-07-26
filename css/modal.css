@@ -25,9 +25,9 @@
     
   }
   .full-img__container i.fa-times-circle {
-      position: absolute;
+      /* position: absolute;
       top: 0;
-      right: 0;
+      right: 0; */
       font-size: 40px;
       padding: 10px;
       color: var(--main-point-color);
@@ -38,10 +38,10 @@
       top: 15%;
       right: 11%;     
   }
-  .recruit-modal1 .full-img__container i.fixBtn {
-      top: 30%;
-      right: 21%;
-  }
+  /* .recruit-modal1 .full-img__container i.fixBtn {
+      top: 11%;
+      right: 300px;
+  } */
   img.full-img {
   width: 100%;
     top: 500px;
@@ -55,23 +55,15 @@
 
 
 /* footer */
-.value-container {
+/* .value-container {
     width: 1000px;
     height: 700px;
     margin: 0 auto;
     overflow: scroll;
     position: relative;
-}
-.value-container i,
-.map-container i.fa-times-circle {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 40px;
-    padding: 10px;
-    color: var(--main-point-color);
-    cursor: pointer;
-}
+} */
+
+
 .value-container img {
     width: 100%;
 
@@ -92,6 +84,15 @@
           color: var(--main-point-color);
           padding: 30px 0 30px 30px;
 
+        }
+        .map-container i.fixBtn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 40px;
+            padding: 10px;
+            color: var(--main-point-color);
+            cursor: pointer;
         }
 
         #map {
@@ -148,10 +149,14 @@
             }
            
            
-           .modal1 .full-img__container i.fixBtn {
+           /* .modal1 .full-img__container i.fixBtn {
             top: 25%;
             right: 2%;   
-           }
+           } */
+           /* .recruit-modal1 .full-img__container i.fixBtn {
+            top: 11%;
+            right: 9%;
+        } */
             .modal2 .full-img__container i.fixBtn {
                 top: 0;
                 right: 0;
@@ -159,20 +164,29 @@
             /* .full-img__container i.fa-times-circle {
                 color: #fff;
             } */
-            .index-modal .full-img__container i.fixBtn {
+        .full-img__container i.fixBtn,
+            .full-img__container i.fixBtn {
                 top: 15%;
                 right: 11%;
+            }
+            .map-container i.fixBtn{
+                top: 0;
+                right: 0;
             }
         }
         
         @media screen and (min-width: 768px) and (max-width:1023px){
-           .value-container {
+           /* .value-container {
                width: 700px;
-           }
-           .modal1 .full-img__container i.fixBtn {
+           } */
+           /* .modal1 .full-img__container i.fixBtn {
             top: 16%;
             right: 5%;   
-           }
+           } */
+           /* .recruit-modal1 .full-img__container i.fixBtn {
+            top: 11%;
+            right: 13%;
+        }
            .index-modal .full-img__container i.fixBtn {
             top: 15%;
             right: 11%;
@@ -180,6 +194,22 @@
         }
         .index-modal img.full-img {
             width: 130%;
+        } */
+        .full-img__container i.fixBtn {
+            top: 11%;
+            right: 13%;
+        }
+          .full-img__container i.fixBtn {
+            top: 15%;
+            right: 11%;
+        
+        }
+       img.full-img {
+            width: 130%;
+        }
+        .map-container i.fixBtn{
+            top: 0;
+            right: 0;
         }
         }
         @media screen and (min-width: 320px) and (max-width: 767px){
@@ -195,17 +225,21 @@
    } */
 
             
-            .value-container {
+            /* .value-container {
                 width: 100%;
                 height: 100%;
-            }
-            .value-container {
+            } */
+            /* .value-container {
                 width: 700px;
-            }
+            } */
             .value-container img {
                 width: 180%;
             }
-            .index-modal .full-img__container {
+            /* .recruit-modal1 .full-img__container i.fixBtn {
+                top: 2%;
+                right: 3%;
+            } */
+            /* .index-modal .full-img__container {
                 width: 100%;
                 height: 100%;
             }
@@ -215,5 +249,20 @@
             }
             .index-modal img.full-img {
                 width: 170%;
+            } */
+            .full-img__container {
+                width: 100%;
+                height: 100%;
+            }
+            .full-img__container i.fixBtn {
+                right: 3%;
+                top: 1%;
+            }
+            img.full-img {
+                width: 170%;
+            }
+            .map-container i.fixBtn{
+                top: 0;
+                right: 0;
             }
         }
