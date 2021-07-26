@@ -60,7 +60,7 @@ body {
  
   .inner {
     width:inherit;
-    padding: 0 40px;
+    /* padding: 0 40px; */
     margin: 0;
   }
 }
@@ -71,7 +71,7 @@ body {
  
   .inner {
     width: 768px;
-    padding: 0 30px;
+    /* padding: 0 30px; */
   }
   
 }
@@ -83,6 +83,6 @@ body {
  
   .inner {
     width: 320px;
-    padding: 0 30px;
+    /* padding: 0 30px; */
   }
 }
