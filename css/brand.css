@@ -1,9 +1,10 @@
-@import "sub-header.css";
-@import "footer.css";
 
+@import "reset.css";
 @import "variables.css";
 @import "modal.css";
 @import "goTopBtn.css";
+@import "sub-header.css";
+@import "footer.css";
 
 
 
@@ -465,6 +466,7 @@ body {
 }
 .card-list {
     display: none;
+    overflow: hidden;
 }
 .card-list.open{
     display: block;
