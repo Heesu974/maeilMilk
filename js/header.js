@@ -85,6 +85,7 @@ if (window.screen.width > 767) {
 
 
     window.addEventListener('scroll', (function () {
+        scrollPos = docElem.scrollTop + 200;
         if (scrollPos >= 600) {
             header.classList.add('scrollActive');
             mobileBtn.classList.add('scrollActive');
@@ -145,7 +146,7 @@ console.log(offset4);
 //스크롤할 떄 navBtn 변하게 하는 함수
 function ScrollColorHandler(e) {
 
-    scrollPos = docElem.scrollTop + 500;
+    scrollPos = docElem.scrollTop + 600;
     let jaebal = navBtnArr.find(item => item.classList.contains('color'));
     console.log(jaebal)
 
